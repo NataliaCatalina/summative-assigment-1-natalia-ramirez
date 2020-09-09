@@ -4,5 +4,25 @@ body {
   background: orange;
 }
 
-
+.top-nav{
+  @include dimension(100%,50%);
+  border: 1px solid blue;
+  display: block;
+  .top-list{
+    width: 100%;
+    .top-nav-list {
+      @include desktop-title__nav(24px,$color_gray,bold,center);
+      text-align: center;
+      float: left;
+      display: inline-block;
+      margin: 0 auto;
+    }
+  }
 }
+
+
+
+
+
+
+}  //end of media screen

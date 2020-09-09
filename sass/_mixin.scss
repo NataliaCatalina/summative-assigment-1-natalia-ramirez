@@ -1,0 +1,11 @@
+@mixin dimension($w,$h){
+  width:$w;
+  height:$h;
+}
+
+@mixin desktop-title__nav($fs,$c,$fw,$ta){
+  font-size: $fs;
+  color:$c;
+  font-weight:$fw;
+  text-align: $ta;
+}
