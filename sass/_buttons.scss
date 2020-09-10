@@ -1,0 +1,15 @@
+.order-now__button{
+border:1px solid red;
+text-align: center;
+// float: left;
+width: 50%;
+padding: 10px 40px;
+margin: 0 auto;
+border-top: 2px solid $color_yellow;
+border-bottom: 2px solid $color_yellow;
+background: $color_white;
+font-family: Poppins;
+font-size: 30px;
+color: $color_gray
+
+}

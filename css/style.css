@@ -4,11 +4,98 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box; }
 
+.icon {
+  font-size: 42px;
+  color: #A3CEF1;
+  margin: 0;
+  text-align: center;
+  float: left;
+  width: 10%;
+  height: auto;
+  padding: 5px; }
+
+.order-now__button {
+  border: 1px solid red;
+  text-align: center;
+  width: 50%;
+  padding: 10px 40px;
+  margin: 0 auto;
+  border-top: 2px solid #E8AA3F;
+  border-bottom: 2px solid #E8AA3F;
+  background: #FFFFFF;
+  font-family: Poppins;
+  font-size: 30px;
+  color: #565759; }
+
+.clearfix::after {
+  clear: both;
+  display: table;
+  content: ""; }
+
+.col {
+  float: left; }
+
+.col-1 {
+  width: 8.3333333333%; }
+
+.col-2 {
+  width: 16.6666666667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.3333333333%; }
+
+.col-5 {
+  width: 41.6666666667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.3333333333%; }
+
+.col-8 {
+  width: 66.6666666667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.3333333333%; }
+
+.col-11 {
+  width: 91.6666666667%; }
+
 @media screen and (max-width: 600px) {
   .top-nav {
-    display: none; } }
+    display: none; }
+
+  .top-nav__mobile {
+    width: 100%;
+    height: 60px;
+    color: #A3CEF1;
+    border-bottom: 4px solid #A3CEF1; }
+
+  .fa-bars {
+    float: right; }
+
+  .logo__aye-empanadas {
+    width: 100%;
+    height: auto;
+    border: 1px solid green; }
+
+  .image__logo {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border: 1px solid red; } }
 @media screen and (min-width: 601px) and (max-width: 799px) {
-  .menu-icon__container {
+  .top-nav__mobile {
     display: none; }
 
   .top-nav {
@@ -32,13 +119,13 @@
         margin: 0 2%; }
 
   .nav-banner {
-    width: 150%;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: -1; } }
 @media screen and (min-width: 800px) {
-  .menu-icon__container {
+  .top-nav__mobile {
     display: none; }
 
   .top-nav {
@@ -66,7 +153,11 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -1; } }
+    z-index: -1; }
+
+  .image__logo {
+    width: 50%;
+    height: auto; } }
 body {
   background: #E7ECEF;
   font-family: 'Poppins'; }

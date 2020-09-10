@@ -1,8 +1,9 @@
 @media screen and (min-width: 800px) {
-  
-.menu-icon__container{
+
+.top-nav__mobile{
   display: none;
 }
+
 
 .top-nav{
   @include dimension(100%,auto);
@@ -31,7 +32,14 @@
   z-index: -1
 }
 
+.menu-icon__menu {
 
+}
+
+.image__logo{
+  width: 50%;
+  height: auto;
+}
 
 
 

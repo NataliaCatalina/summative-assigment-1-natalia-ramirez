@@ -1,8 +1,39 @@
 @media screen and (max-width:600px){
 
+
 .top-nav{
   display: none;
 }
 
 
+.top-nav__mobile{
+  // border: 1px solid red;
+  @include dimension(100%,60px);
+  color: $color_light-blue;
+  border-bottom: 4px solid $color_light-blue;
 }
+
+.fa-bars{
+  float: right;
+}
+
+.logo__aye-empanadas{
+  width: 100%;
+  height: auto;
+  border: 1px solid green;
+}
+
+.image__logo{
+  width: 80%;
+  height: auto;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+border: 1px solid red;
+}
+
+
+
+
+} //end of mobile

@@ -1,6 +1,6 @@
 @media screen and (min-width: 601px) and (max-width: 799px){
 
-  .menu-icon__container{
+.top-nav__mobile{
     display: none;
   }
 
@@ -24,7 +24,7 @@
   }
 
   .nav-banner{
-    width: 150%;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
