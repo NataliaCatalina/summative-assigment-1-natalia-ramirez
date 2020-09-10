@@ -3,9 +3,10 @@
   height:$h;
 }
 
-@mixin desktop-title__nav($fs,$c,$fw,$ta){
+@mixin desktop-title__nav($fs,$c,$fw,$ta,$li){
   font-size: $fs;
   color:$c;
   font-weight:$fw;
   text-align: $ta;
+  list-style: $li;
 }

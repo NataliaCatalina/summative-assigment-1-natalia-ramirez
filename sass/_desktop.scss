@@ -1,28 +1,40 @@
-@media screen and (min-width: 800px) and (max-width: 1800px){
-
-body {
-  background: orange;
+@media screen and (min-width: 800px) {
+  
+.menu-icon__container{
+  display: none;
 }
 
 .top-nav{
-  @include dimension(100%,50%);
-  border: 1px solid blue;
+  @include dimension(100%,auto);
+  // border: 1px solid blue;
   display: block;
-  .top-list{
-    width: 100%;
-    .top-nav-list {
-      @include desktop-title__nav(24px,$color_gray,bold,center);
-      text-align: center;
-      float: left;
-      display: inline-block;
-      margin: 0 auto;
+    .top-list{
+    @include dimension(100%,auto);
+    // border: 1px solid red;
+    margin: 1% 0;
+    text-align: center;
+     .top-nav-list {
+      @include dimension(100%,auto);
+      @include desktop-title__nav(24px,$color_gray,bold,center,none);
+      display: inline;
+      // border: 1px solid green;
+      margin: 0 2%;
     }
   }
 }
 
+.nav-banner{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1
+}
 
 
 
 
 
-}  //end of media screen
+
+
+}  //end of Desktop screen
