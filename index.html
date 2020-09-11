@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 
     <!-- stylesheets -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,400&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/style.css">
 
     <title>Aye Empanadas and More</title>
@@ -29,26 +29,70 @@
     <i class="fas fa-bars icon"></i>
   </div>
 
-</div>
+</div> <!-- end top nav mobile -->
 
     <nav class="top-nav">
       <img class="nav-banner"src="images/nav.png" alt="navegation banner">
       <ul class="top-list">
         <li class="top-nav-list"><a class="top-nav-link" href="home"></a>Home</li>
-        <li class="top-nav-list"><a class="top-nav-link" href="#"></a>Menu</li>
+        <li class="top-nav-list"><a class="top-nav-link" href="menu"></a>Menu</li>
         <li class="top-nav-list"><a class="top-nav-link" href="#"></a>About</li>
         <li class="top-nav-list"><a class="top-nav-link" href="#"></a>Contact Us</li>
       </ul>
     </nav>
 
+    <nav id="drop-nav" class="drop-nav__mobile">
+      <ul>
+        <li href="home">Home</li>
+        <li href="menu">Menu</li>
+        <li href="#">About</li>
+        <li href="#">Contact Us</li>
+      </ul>
+    </nav>
+
+<!-- HOME -->
 <section id="home">
 
-  <div class="logo__aye-empanadas">
-    <img class="image__logo" src="images/aye-empanada__logo.png" alt="logo aye empanadas">
+    <img class="logo" src="images/aye-empanada__logo.png" alt="logo aye empanadas">
     <button class="order-now__button" type="button" name="button">Order Now</button>
+
+
+  <div class="image-container">
+    <div class="col col4">
+      <a href="https://www.instagram.com/p/CEdDMUesZWJ/"><img class="social-photos" src="images/social-01.png" alt="images from social media"></a>
+      <a href="https://www.instagram.com/p/CEYLCVGs1EV/"><img class="social-photos" src="images/social-02.png" alt="images from social media"></a>
+      <a href="https://www.instagram.com/p/CE7_Lfds-kv/"><img class="social-photos" src="images/social-03.png" alt="images from social media"></a>
+    </div>
+
+    <div class="col col4">
+      <a href="https://www.instagram.com/p/CE2xrZHMdaQ/"><img class="social-photos" src="images/social-04.png" alt="images from social media"></a>
+      <a href="https://www.instagram.com/p/CEp_KIaMD_n/"><img class="social-photos" src="images/social-05.png" alt="images from social media"></a>
+      <a href="https://www.instagram.com/p/CETs5gUMwLM/"><img class="social-photos" src="images/social-06.png" alt="images from social media"></a>
+    </div>
+
+    <div class="col col4">
+      <a href="https://www.instagram.com/p/CEILxrAgiJk/"><img class="social-photos" src="images/social-07.png" alt="images from social media"></a>
+      <img class="social-photos" src="images/social-08.png" alt="images from social media">
+      <img class="social-photos" src="images/social-09.png" alt="images from social media">
+    </div>
+
+  </div> <!-- end image container -->
+
+</section> <!--end home -->
+
+<!-- MENU -->
+<section id="menu">
+
+  <div class="title_menu">
+    <h1>Menu</h1>
+    <div class="blue-line"></div>
   </div>
 
-</section>
+  <nav class="menu-nav">
+
+  </nav>
+
+</section> <!-- end menu -->
 
 <!-- script -->
     <script

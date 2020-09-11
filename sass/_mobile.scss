@@ -1,10 +1,8 @@
 @media screen and (max-width:600px){
 
-
 .top-nav{
   display: none;
 }
-
 
 .top-nav__mobile{
   // border: 1px solid red;
@@ -17,23 +15,61 @@
   float: right;
 }
 
-.logo__aye-empanadas{
+.drop-nav__mobile{
+  background: $color_light-blue;
+  width: 100%;
+  height: 667px;
+  text-align: center;
+  font-size: 36px;
+  padding-top: 20%;
+  li{
+    margin: 0 15%;
+    list-style: none;
+    border-bottom: 3px solid $color_yellow;
+    text-align: center;
+   }
+ }
+
+.logo{
+  width: 70%;
+  height: auto;
+  margin: 8%;
+  // border: 1px solid red;
+  margin: auto;
+  display: block;
+}
+
+.image-container {
   width: 100%;
   height: auto;
-  border: 1px solid green;
+  // border: 1px solid blue;
+  margin-top: 10%;
+  overflow: auto;
 }
 
-.image__logo{
-  width: 80%;
+.social-photos{
+  width: 30%;
+  height: auto;
+  margin: 1%;
+}
+
+.title_menu{
+  border: 1px solid red;
+  h1{
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 10%;
+  }
+}
+
+.blue-line{
+  border-bottom: 2px solid $color_light-blue;
+  width: 50%;
   height: auto;
   margin: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-border: 1px solid red;
+  display: block;
+  margin-bottom: 5%;
 }
-
-
 
 
 } //end of mobile

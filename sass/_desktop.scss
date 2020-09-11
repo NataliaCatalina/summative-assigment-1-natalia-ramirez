@@ -36,11 +36,23 @@
 
 }
 
-.image__logo{
-  width: 50%;
+.logo__aye-empanadas{
+  width: 100%;
   height: auto;
+  border: 1px solid green;
+  margin: 0;
+  float: left;
 }
 
+.logo{
+  width: 50%;
+  height: auto;
+  margin: 1%;
+  // align-items: center;
+  margin: auto;
+  display: block;
+  border: 1px solid red;
+}
 
 
 
