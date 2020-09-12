@@ -15,6 +15,28 @@
   height: auto;
   padding: 5px; }
 
+.menu__box--icon {
+  color: #E8AA3F; }
+
+.information-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid blue;
+  margin: 10%; }
+
+.information-text__contact {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  border: 1px solid red;
+  margin-left: 10%; }
+
 .order-now__button {
   border: none;
   width: 35%;
@@ -121,7 +143,8 @@
     .title_menu h1 {
       text-align: center;
       margin-bottom: 2%;
-      margin-top: 10%; }
+      margin-top: 10%;
+      color: #565759; }
 
   .blue-line {
     border-bottom: 2px solid #A3CEF1;
@@ -152,13 +175,50 @@
   .box__empanadas--menu {
     width: 100%;
     height: auto;
-    border: 1px solid purple; }
-    .box__empanadas--menu .type-price {
+    border: 1px solid blue; }
+
+  .box__empanada--chiken {
+    width: 350px;
+    height: auto;
+    background: #FFFFFF;
+    border: 1px solid purple;
+    margin: auto;
+    border-radius: 10px;
+    display: block; }
+    .box__empanada--chiken .box__empanada--top {
       width: 100%;
       height: auto;
-      border: 1px solid red; } }
+      border: 1px solid red; }
+
+  .info__photo {
+    width: 50%;
+    height: auto;
+    border: 1px solid green;
+    float: left; }
+
+  .info__type-price {
+    width: 50%;
+    height: 150px;
+    border: 1px solid orange;
+    float: left;
+    text-align: center; }
+    .info__type-price h2 {
+      font-size: 24px;
+      color: #565759;
+      font-weight: bold; }
+
+  .info__type-price p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #565759; }
+
+  .btn__box {
+    width: 100%;
+    height: 20px;
+    margin-top: 30%;
+    border: 1px solid pink; } }
 @media screen and (min-width: 601px) and (max-width: 799px) {
-  .top-nav__mobile {
+  .drop-nav__mobile {
     display: none; }
 
   .top-nav {
@@ -203,7 +263,7 @@
     margin: auto;
     display: block; } }
 @media screen and (min-width: 800px) {
-  .top-nav__mobile {
+  .drop-nav__mobile {
     display: none; }
 
   .top-nav {

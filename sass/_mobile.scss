@@ -30,6 +30,8 @@
    }
  }
 
+
+
 .logo{
   width: 70%;
   height: auto;
@@ -62,6 +64,7 @@
     text-align: center;
     margin-bottom: 2%;
     margin-top: 10%;
+    color: $color_gray;
   }
 }
 
@@ -98,16 +101,68 @@
 
  // *************************************************EMPANADAS
 
- .box__empanadas--menu {
+ .box__empanadas--menu{
    width: 100%;
    height: auto;
+   border: 1px solid blue;
+ }
+
+ .box__empanada--chiken {
+   width: 350px;
+   height: auto;
+   background: $color_white;
    border: 1px solid purple;
-   .type-price {
+   margin: auto;
+   border-radius: 10px;
+   display: block;
+   .box__empanada--top {
      width: 100%;
      height: auto;
      border: 1px solid red;
+
    }
  }
+
+ .info__photo {
+   width: 50%;
+   height: auto;
+   border: 1px solid green;
+   float: left;
+
+ }
+ .info__type-price{
+   width: 50%;
+   height: 150px;
+   border: 1px solid orange;
+   float: left;
+   text-align: center;
+   h2{
+     // text-align: center;
+     font-size: 24px;
+     color: $color_gray;
+     font-weight: bold;
+   }
+ }
+
+ .info__type-price{
+   p {
+     font-size: 16px;
+     font-weight: normal;
+     color: $color_gray;
+   }
+ }
+
+.btn__box{
+  width: 100%;
+  height: 20px;
+  margin-top: 30%;
+  border: 1px solid pink;
+}
+
+
+
+
+//  *****************************************************ABOUT
 
 
 } //end of mobile

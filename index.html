@@ -36,17 +36,17 @@
       <ul class="top-list">
         <li class="top-nav-list"><a class="top-nav-link" href="#home"></a>Home</li>
         <li class="top-nav-list"><a class="top-nav-link" href="#menu"></a>Menu</li>
-        <li class="top-nav-list"><a class="top-nav-link" href="#"></a>About</li>
-        <li class="top-nav-list"><a class="top-nav-link" href="#"></a>Contact Us</li>
+        <li class="top-nav-list"><a class="top-nav-link" href="about"></a>About</li>
+        <li class="top-nav-list"><a class="top-nav-link" href="contact"></a>Contact Us</li>
       </ul>
     </nav>
 
     <nav id="drop-nav" class="drop-nav__mobile">
       <ul>
-        <li href="home">Home</li>
-        <li href="menu">Menu</li>
-        <li href="#">About</li>
-        <li href="#">Contact Us</li>
+        <li><a href="#home"></a>Home</li>
+        <li><a href="#menu"></a>Menu</li>
+        <li><a href="#about"></a>About</li>
+        <li><a href="#contact-us"></a>Contact Us</li>
       </ul>
     </nav>
 
@@ -97,31 +97,41 @@
 
 <!-- BOX 01 -->
   <div class="box__empanadas--menu">
+
     <div class="box__empanada--chiken">
-      <div class="type-price">
-        <h3>Chiken</h3>
-        <h2>$6.50</h2>
-        <i class="fas fa-arrow-circle-down"></i>
-        <i class="fas fa-arrow-circle-up"></i>
-        <i class="fas fa-plus-circle"></i>
+      <div class="box__empanada--top">
+        <div class="info__photo">
+          <img src="images/empanada-chicken.jpg" alt="chicken empanada ">
+        </div>
+        <div class="info__type-price">
+          <h2>Chiken</h2>
+          <p>$6.50</p>
+
+          <div class="btn__box">
+          <i class="fas fa-arrow-circle-down menu__box--icon"></i>
+          <i class="fas fa-arrow-circle-up menu__box--icon"></i>
+          <i class="fas fa-plus-circle menu__box--icon"></i>
+          </div>
+
+        </div>
       </div>
-      <div class="">
+
+      <div class="info__description-request">
         <p>Chicken breast, red pepper, hard-boiled egg and green olives</p>
         <div class="ranking">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="far fa-star"></i>
+          <i class="fas fa-star menu__box--icon"></i>
+          <i class="fas fa-star menu__box--icon"></i>
+          <i class="fas fa-star menu__box--icon"></i>
+          <i class="fas fa-star menu__box--icon"></i>
+          <i class="far fa-star menu__box--icon"></i>
           <p>4</p>
         </div>
         <form class="form__request" action="index.html" method="post">
            <p>Special requests?</p>
            <label for="message">Add them here</label>
-           <textarea id="message" name="message" rows="1" cols="34" class="textarea">
-           </textarea>
-            <b><i class="fas fa-plus-circle"></i></b>
-           <input type="submit" value="Submit" id="submit">
+           <!-- <textarea id="message" name="message" rows="1" cols="34" class="textarea"></textarea> -->
+            <b><i class="fas fa-plus-circle menu__box--icon"></i></b>
+           <!-- <input type="submit" value="Submit" id="submit"> -->
          </form>
 
       </div>
@@ -130,6 +140,55 @@
   </div>
 
 </section> <!-- end menu -->
+
+<section id="about">
+
+  <div>
+    <div class="title_menu">
+      <h1>About</h1>
+      <div class="blue-line"></div>
+    </div>
+  </div>
+
+  <p class="information-text">We are an Argentinean couple bringing some of our traditional homemade
+    delights to Wellington! EMPANADAS: Baked turnovers with homemade dough,
+    filled with fresh delicious ingredients and love! </p>
+
+
+  <div>
+    <div class="title_menu">
+      <h1>About Empanadas</h1>
+      <div class="blue-line"></div>
+    </div>
+  </div>
+
+  <div>
+    <div class="title_menu">
+      <h1>Open Hours</h1>
+      <div class="blue-line"></div>
+    </div>
+  </div>
+
+  <p class="information-text">Monday to Friday 10am to 9pm </p>
+
+</section> <!-- end section about -->
+
+<section id="contact-us">
+
+  <div>
+    <div class="title_menu">
+      <h1>Contact Us</h1>
+      <div class="blue-line"></div>
+    </div>
+  </div>
+
+  <p class="information-text">Tell us what you think and how we’re doing</p>
+
+  <p class="information-text__contact">Tel: 0210 832 6003 <br> Email: aye.empanadasandmore</p>
+
+  <p class="information-text__contact">43 Coutts Street <br> Kilbirnie, <br> Wellington 6022</p>
+
+</section> <!-- end section contact-us -->
 
 <!-- script -->
     <script
