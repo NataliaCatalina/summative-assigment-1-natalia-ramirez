@@ -129,7 +129,34 @@
     height: auto;
     margin: auto;
     display: block;
-    margin-bottom: 5%; } }
+    margin-bottom: 5%; }
+
+  .nav__menu {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 2%; }
+    .nav__menu li {
+      margin: 0 2%;
+      list-style: none;
+      text-align: center;
+      display: inline; }
+      .nav__menu li a:hover {
+        color: #E8AA3F; }
+
+  .nav__menu--link {
+    color: #565759;
+    text-decoration: none; }
+
+  .box__empanadas--menu {
+    width: 100%;
+    height: auto;
+    border: 1px solid purple; }
+    .box__empanadas--menu .type-price {
+      width: 100%;
+      height: auto;
+      border: 1px solid red; } }
 @media screen and (min-width: 601px) and (max-width: 799px) {
   .top-nav__mobile {
     display: none; }

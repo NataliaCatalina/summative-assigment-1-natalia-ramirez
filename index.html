@@ -34,8 +34,8 @@
     <nav class="top-nav">
       <img class="nav-banner"src="images/nav.png" alt="navegation banner">
       <ul class="top-list">
-        <li class="top-nav-list"><a class="top-nav-link" href="home"></a>Home</li>
-        <li class="top-nav-list"><a class="top-nav-link" href="menu"></a>Menu</li>
+        <li class="top-nav-list"><a class="top-nav-link" href="#home"></a>Home</li>
+        <li class="top-nav-list"><a class="top-nav-link" href="#menu"></a>Menu</li>
         <li class="top-nav-list"><a class="top-nav-link" href="#"></a>About</li>
         <li class="top-nav-list"><a class="top-nav-link" href="#"></a>Contact Us</li>
       </ul>
@@ -80,7 +80,7 @@
 
 </section> <!--end home -->
 
-<!-- MENU -->
+<!-- MENU SECTION -->
 <section id="menu">
 
   <div class="title_menu">
@@ -88,9 +88,46 @@
     <div class="blue-line"></div>
   </div>
 
-  <nav class="menu-nav">
-
+  <nav class="nav__menu">
+    <ul>
+      <li> <a class="nav__menu--link" href="#empanadas">Empanadas</a></li>
+      <li> <a class="nav__menu--link" href="#sweets">Sweets</a></li>
+    </ul>
   </nav>
+
+<!-- BOX 01 -->
+  <div class="box__empanadas--menu">
+    <div class="box__empanada--chiken">
+      <div class="type-price">
+        <h3>Chiken</h3>
+        <h2>$6.50</h2>
+        <i class="fas fa-arrow-circle-down"></i>
+        <i class="fas fa-arrow-circle-up"></i>
+        <i class="fas fa-plus-circle"></i>
+      </div>
+      <div class="">
+        <p>Chicken breast, red pepper, hard-boiled egg and green olives</p>
+        <div class="ranking">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <p>4</p>
+        </div>
+        <form class="form__request" action="index.html" method="post">
+           <p>Special requests?</p>
+           <label for="message">Add them here</label>
+           <textarea id="message" name="message" rows="1" cols="34" class="textarea">
+           </textarea>
+            <b><i class="fas fa-plus-circle"></i></b>
+           <input type="submit" value="Submit" id="submit">
+         </form>
+
+      </div>
+
+  </div>
+  </div>
 
 </section> <!-- end menu -->
 

@@ -53,6 +53,9 @@
   margin: 1%;
 }
 
+
+// ***********************************************MENU SECTION
+
 .title_menu{
   border: 1px solid red;
   h1{
@@ -70,6 +73,41 @@
   display: block;
   margin-bottom: 5%;
 }
+
+.nav__menu{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 2%;
+  li{
+    margin: 0 2%;
+    list-style: none;
+    text-align: center;
+    display: inline;
+    a:hover{
+      color: $color_yellow;
+      }
+   }
+ }
+
+ .nav__menu--link{
+   color: $color_gray;
+   text-decoration: none;
+ }
+
+ // *************************************************EMPANADAS
+
+ .box__empanadas--menu {
+   width: 100%;
+   height: auto;
+   border: 1px solid purple;
+   .type-price {
+     width: 100%;
+     height: auto;
+     border: 1px solid red;
+   }
+ }
 
 
 } //end of mobile
