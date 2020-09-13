@@ -11,7 +11,10 @@ $('.fa-bars').click(function(){
 });
 
 $('#read-more-btn').click(function(){
-    $('#para01').toggle();
+    $('#para01').show();
+  });
+$('#read-less-btn').click(function(){
+    $('#para01').hide();
   });
 
 });

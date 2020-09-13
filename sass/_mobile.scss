@@ -125,10 +125,12 @@ a:hover{
    display: block;
  }
 
-.box-top{
-  background: $color_white;
-  border-radius: 10px;
-}
+// .box-top{
+//   // width: 350px;
+//   // height: auto;
+//   background: $color_white;
+//   border-radius: 10px;
+// }
 
 .btn__box{
   width: 100%;
@@ -138,18 +140,18 @@ a:hover{
 }
 
  .info__photo {
-   width: 50%;
-   height: auto;
-   // border: 1px solid green;
-   float: left;
-   text-align: center;
- }
+   // border: 1px solid white;
+}
+
+.photo-empanadas{
+  width: 80%;
+  height: auto;
+  display: block;    // both together center items
+  margin: auto;     // center items images only
+}
 
  .info__type-price{
-   width: 50%;
-   height: 150px;
-   // border: 1px solid orange;
-   float: left;
+   border: 1px solid orange;
    text-align: center;
    h2{
       font-style: normal;

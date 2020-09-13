@@ -1,55 +1,55 @@
 @media screen and (min-width: 601px) and (max-width: 799px){
 
-.drop-nav__mobile{
-    display: none;
-  }
-
-  .top-nav{
-    @include dimension(100%,auto);
-    // border: 1px solid blue;
-    display: block;
-      .top-list{
-      @include dimension(100%,auto);
-      // border: 1px solid red;
-      margin: 1% 0;
-      text-align: center;
-       .top-nav-list {
-        @include dimension(100%,auto);
-        @include desktop-title__nav(20px,$color_gray,bold,center,none);
-        display: inline;
-        // border: 1px solid green;
-        margin: 0 2%;
-
-      }
-    }
-  }
-
-  .nav-banner{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1
-  }
-
-  .logo__aye-empanadas{
-    width: 100%;
-    height: auto;
-    border: 1px solid green;
-    margin: 0;
-    float: left;
-  }
-
-  .logo{
-    width: 70%;
-    height: auto;
-    margin: 8%;
-    // align-items: center;
-    border: 1px solid red;
-    margin: auto;
-    display: block;
-  }
-
+// .drop-nav__mobile{
+//     display: none;
+//   }
+//
+//   .top-nav{
+//     @include dimension(100%,auto);
+//     // border: 1px solid blue;
+//     display: block;
+//       .top-list{
+//       @include dimension(100%,auto);
+//       // border: 1px solid red;
+//       margin: 1% 0;
+//       text-align: center;
+//        .top-nav-list {
+//         @include dimension(100%,auto);
+//         @include desktop-title__nav(20px,$color_gray,bold,center,none);
+//         display: inline;
+//         // border: 1px solid green;
+//         margin: 0 2%;
+//
+//       }
+//     }
+//   }
+//
+//   .nav-banner{
+//     width: 100%;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     z-index: -1
+//   }
+//
+//   .logo__aye-empanadas{
+//     width: 100%;
+//     height: auto;
+//     border: 1px solid green;
+//     margin: 0;
+//     float: left;
+//   }
+//
+//   .logo{
+//     width: 70%;
+//     height: auto;
+//     margin: 8%;
+//     // align-items: center;
+//     border: 1px solid red;
+//     margin: auto;
+//     display: block;
+//   }
+//
 
 
 
