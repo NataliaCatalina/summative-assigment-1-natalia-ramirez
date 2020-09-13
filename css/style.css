@@ -19,13 +19,11 @@
   color: #E8AA3F; }
 
 .information-text {
-  font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
-  border: 1px solid blue;
   margin: 10%; }
 
 .information-text__contact {
@@ -34,7 +32,6 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
-  border: 1px solid red;
   margin-left: 10%; }
 
 .order-now__button {
@@ -54,45 +51,6 @@
   clear: both;
   display: table;
   content: ""; }
-
-.col {
-  float: left; }
-
-.col-1 {
-  width: 8.3333333333%; }
-
-.col-2 {
-  width: 16.6666666667%; }
-
-.col-3 {
-  width: 25%; }
-
-.col-4 {
-  width: 33.3333333333%; }
-
-.col-5 {
-  width: 41.6666666667%; }
-
-.col-6 {
-  width: 50%; }
-
-.col-7 {
-  width: 58.3333333333%; }
-
-.col-8 {
-  width: 66.6666666667%; }
-
-.col-9 {
-  width: 75%; }
-
-.col-10 {
-  width: 83.3333333333%; }
-
-.col-11 {
-  width: 91.6666666667%; }
-
-.col-12 {
-  width: 100%; }
 
 @media screen and (max-width: 600px) {
   .top-nav {
@@ -117,8 +75,15 @@
     .drop-nav__mobile li {
       margin: 0 15%;
       list-style: none;
+      text-decoration: none;
       border-bottom: 3px solid #E8AA3F;
       text-align: center; }
+      .drop-nav__mobile li a {
+        color: #000000;
+        text-decoration: none; }
+
+  a:hover {
+    color: #E8AA3F; }
 
   .logo {
     width: 70%;
@@ -138,13 +103,11 @@
     height: auto;
     margin: 1%; }
 
-  .title_menu {
-    border: 1px solid red; }
-    .title_menu h1 {
-      text-align: center;
-      margin-bottom: 2%;
-      margin-top: 10%;
-      color: #565759; }
+  .title_menu h1 {
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 10%;
+    color: #565759; }
 
   .blue-line {
     border-bottom: 2px solid #A3CEF1;
@@ -185,43 +148,92 @@
     margin: auto;
     border-radius: 10px;
     display: block; }
-    .box__empanada--chiken .box__empanada--top {
-      width: 100%;
-      height: auto;
-      border: 1px solid red; }
 
-  .info__photo {
-    width: 50%;
-    height: auto;
-    border: 1px solid green;
-    float: left; }
-
-  .info__type-price {
-    width: 50%;
-    height: 150px;
-    border: 1px solid orange;
-    float: left;
-    text-align: center; }
-    .info__type-price h2 {
-      font-size: 24px;
-      color: #565759;
-      font-weight: bold; }
-
-  .info__type-price p {
-    font-size: 16px;
-    font-weight: normal;
-    color: #565759; }
+  .box-top {
+    background: #FFFFFF;
+    border-radius: 10px; }
 
   .btn__box {
     width: 100%;
     height: 20px;
-    margin-top: 30%;
-    border: 1px solid pink; }
+    margin-top: 30%; }
+
+  .info__photo {
+    width: 50%;
+    height: auto;
+    float: left;
+    text-align: center; }
+
+  .info__type-price {
+    width: 50%;
+    height: 150px;
+    float: left;
+    text-align: center; }
+    .info__type-price h2 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 150%;
+      color: #565759;
+      margin-top: 5px; }
+
+  .info__type-price p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #565759; }
+
+  .ranking-number {
+    width: 10%;
+    height: auto;
+    float: left;
+    display: block; }
+
+  .empanadas-description {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 4%; }
+
+  .request-text {
+    width: 90%;
+    height: auto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 143%;
+    border-bottom: 1px solid #000000; }
+
+  .ranking {
+    width: 90%;
+    height: auto;
+    float: left;
+    text-align: right; }
 
   .aye-photo {
     width: 80%;
     margin: auto;
-    display: block; } }
+    display: block; }
+
+  .map {
+    width: 100%;
+    height: auto;
+    margin: 5%; }
+
+  footer {
+    width: 100%;
+    height: auto;
+    background: #565759; }
+    footer p {
+      color: #E7ECEF;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 27px;
+      text-align: center;
+      padding: 3%; } }
 @media screen and (min-width: 601px) and (max-width: 799px) {
   .drop-nav__mobile {
     display: none; }

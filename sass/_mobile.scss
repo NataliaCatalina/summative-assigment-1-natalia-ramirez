@@ -25,12 +25,20 @@
   li{
     margin: 0 15%;
     list-style: none;
+    text-decoration: none;
     border-bottom: 3px solid $color_yellow;
     text-align: center;
-   }
+    a{
+      color: $color_black;
+      text-decoration: none;
+    }
+
  }
+}
 
-
+a:hover{
+  color: $color_yellow;
+}
 
 .logo{
   width: 70%;
@@ -59,7 +67,7 @@
 // ***********************************************MENU SECTION
 
 .title_menu{
-  border: 1px solid red;
+  // border: 1px solid red;
   h1{
     text-align: center;
     margin-bottom: 2%;
@@ -115,60 +123,121 @@
    margin: auto;
    border-radius: 10px;
    display: block;
-   .box__empanada--top {
-     width: 100%;
-     height: auto;
-     border: 1px solid red;
-
-   }
  }
 
- .info__photo {
-   width: 50%;
-   height: auto;
-   border: 1px solid green;
-   float: left;
-
- }
- .info__type-price{
-   width: 50%;
-   height: 150px;
-   border: 1px solid orange;
-   float: left;
-   text-align: center;
-   h2{
-     // text-align: center;
-     font-size: 24px;
-     color: $color_gray;
-     font-weight: bold;
-   }
- }
-
- .info__type-price{
-   p {
-     font-size: 16px;
-     font-weight: normal;
-     color: $color_gray;
-   }
- }
+.box-top{
+  background: $color_white;
+  border-radius: 10px;
+}
 
 .btn__box{
   width: 100%;
   height: 20px;
   margin-top: 30%;
-  border: 1px solid pink;
+  // border: 1px solid pink;
+}
+
+ .info__photo {
+   width: 50%;
+   height: auto;
+   // border: 1px solid green;
+   float: left;
+   text-align: center;
+ }
+
+ .info__type-price{
+   width: 50%;
+   height: 150px;
+   // border: 1px solid orange;
+   float: left;
+   text-align: center;
+   h2{
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 150%;
+      color: $color_gray;
+      margin-top: 5px;
+   }
+ }
+
+ .info__type-price{
+   p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: $color_gray;
+   }
+ }
+
+.ranking-number{
+  width: 10%;
+  height: auto;
+  float: left;
+  display: block;
+  // text-align: right;
+}
+
+.empanadas-description{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 4%;
+}
+
+.request-text{
+  // border: 1px solid orange;
+  width: 90%;
+  height: auto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 143%;
+  border-bottom: 1px solid $color_black;
+}
+
+.ranking{
+  width: 90%;
+  height: auto;
+  float: left;
+  // border: 1px solid red;
+  text-align: right;
 }
 
 
-
-
-//  *****************************************************ABOUT
+//  ********************************** about
 
 .aye-photo{
   width: 80%;
   margin: auto;
-display: block;
+  display: block;
+}
 
+//**********************************contact us
+
+.map {
+  width: 100%;
+  height: auto;
+  margin: 5%;
+}
+
+
+// ********************************* footer
+
+footer{
+  @include dimension (100%,auto);
+  background: $color_gray;
+    p{
+    color: $color_light-white;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    padding: 3%;
+    }
 }
 
 

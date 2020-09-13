@@ -32,21 +32,21 @@
 </div> <!-- end top nav mobile -->
 
     <nav class="top-nav">
-      <img class="nav-banner"src="images/nav.png" alt="navegation banner">
+      <img class="nav-banner" src="images/nav.png" alt="navegation banner">
       <ul class="top-list">
-        <li class="top-nav-list"><a class="top-nav-link" href="#home"></a>Home</li>
-        <li class="top-nav-list"><a class="top-nav-link" href="#menu"></a>Menu</li>
-        <li class="top-nav-list"><a class="top-nav-link" href="about"></a>About</li>
-        <li class="top-nav-list"><a class="top-nav-link" href="contact"></a>Contact Us</li>
+        <li class="top-nav-list"><a class="top-nav-link" href="#home">Home</a></li>
+        <li class="top-nav-list"><a class="top-nav-link" href="#menu">Menu</a></li>
+        <li class="top-nav-list"><a class="top-nav-link" href="about">About</a></li>
+        <li class="top-nav-list"><a class="top-nav-link" href="contact">Contact Us</a></li>
       </ul>
     </nav>
 
     <nav id="drop-nav" class="drop-nav__mobile">
       <ul>
-        <li><a href="#home"></a>Home</li>
-        <li><a href="#menu"></a>Menu</li>
-        <li><a href="#about"></a>About</li>
-        <li><a href="#contact-us"></a>Contact Us</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact-us">Contact Us</a></li>
       </ul>
     </nav>
 
@@ -58,7 +58,7 @@
 
 
   <div class="image-container">
-    <div class="col col4">
+    <div class="">
       <a href="https://www.instagram.com/p/CEdDMUesZWJ/"><img class="social-photos" src="images/social-01.png" alt="images from social media"></a>
       <a href="https://www.instagram.com/p/CEYLCVGs1EV/"><img class="social-photos" src="images/social-02.png" alt="images from social media"></a>
       <a href="https://www.instagram.com/p/CE7_Lfds-kv/"><img class="social-photos" src="images/social-03.png" alt="images from social media"></a>
@@ -99,7 +99,8 @@
   <div class="box__empanadas--menu">
 
     <div class="box__empanada--chiken">
-      <div class="box__empanada--top">
+
+      <div class="box-top">
         <div class="info__photo">
           <img src="images/empanada-chicken.jpg" alt="chicken empanada ">
         </div>
@@ -108,36 +109,42 @@
           <p>$6.50</p>
 
           <div class="btn__box">
-          <i class="fas fa-arrow-circle-down menu__box--icon"></i>
+
+          <button id="read-more-btn" class="read-more-btn" type="button" name="button"><i class="fas fa-arrow-circle-down menu__box--icon"></i></button>
           <i class="fas fa-arrow-circle-up menu__box--icon"></i>
           <i class="fas fa-plus-circle menu__box--icon"></i>
           </div>
-
+          </div>
         </div>
-      </div>
 
-      <div class="info__description-request">
-        <p>Chicken breast, red pepper, hard-boiled egg and green olives</p>
+
+
+
+         <div id="para01">
+
+
+        <p class="empanadas-description">Chicken breast, red pepper, hard-boiled egg and green olives</p>
         <div class="ranking">
           <i class="fas fa-star menu__box--icon"></i>
           <i class="fas fa-star menu__box--icon"></i>
           <i class="fas fa-star menu__box--icon"></i>
           <i class="fas fa-star menu__box--icon"></i>
           <i class="far fa-star menu__box--icon"></i>
-          <p>4</p>
+
         </div>
-        <form class="form__request" action="index.html" method="post">
-           <p>Special requests?</p>
-           <label for="message">Add them here</label>
-           <!-- <textarea id="message" name="message" rows="1" cols="34" class="textarea"></textarea> -->
-            <b><i class="fas fa-plus-circle menu__box--icon"></i></b>
-           <!-- <input type="submit" value="Submit" id="submit"> -->
-         </form>
+        <p class="ranking-number">4</p>
 
-      </div>
+        <p class="request-text">Special requests?</p>
+        <input id="special-request__box" type="text" name="special-request" placeholder="Add them here ">
+        <b><i class="fas fa-plus-circle menu__box--icon"></i></b>
+        </div>
 
-  </div>
-  </div>
+</div>
+
+
+
+  </div>  <!-- end of box empanadas menu -->
+
 
 </section> <!-- end menu -->
 
@@ -192,10 +199,16 @@ cooking. The name comes from the Spanish word empanar, which means “to roll or
   <p class="information-text">Tell us what you think and how we’re doing</p>
 
   <p class="information-text__contact">Tel: 0210 832 6003 <br> Email: aye.empanadasandmore</p>
-
+  <br>
   <p class="information-text__contact">43 Coutts Street <br> Kilbirnie, <br> Wellington 6022</p>
+  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.4831496366114!2d174.7938629513998!3d-41.32010615031347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38af36c21de82d%3A0x4f4ec51b3c59d2a7!2sAye*21%20Empanadas%20%26%20More!5e0!3m2!1ses!2snz!4v1599986396945!5m2!1ses!2snz" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
 </section> <!-- end section contact-us -->
+
+<footer>
+    <p> ©2020 Yoobee <br>Developed by Natalia Ramirez</p>
+
+</footer>
 
 <!-- script -->
     <script
