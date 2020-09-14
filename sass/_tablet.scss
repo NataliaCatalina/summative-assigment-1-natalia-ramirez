@@ -1,57 +1,96 @@
 @media screen and (min-width: 601px) and (max-width: 799px){
 
-// .drop-nav__mobile{
-//     display: none;
-//   }
-//
-//   .top-nav{
-//     @include dimension(100%,auto);
-//     // border: 1px solid blue;
-//     display: block;
-//       .top-list{
-//       @include dimension(100%,auto);
-//       // border: 1px solid red;
-//       margin: 1% 0;
-//       text-align: center;
-//        .top-nav-list {
-//         @include dimension(100%,auto);
-//         @include desktop-title__nav(20px,$color_gray,bold,center,none);
-//         display: inline;
-//         // border: 1px solid green;
-//         margin: 0 2%;
-//
-//       }
-//     }
-//   }
-//
-//   .nav-banner{
-//     width: 100%;
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     z-index: -1
-//   }
-//
-//   .logo__aye-empanadas{
-//     width: 100%;
-//     height: auto;
-//     border: 1px solid green;
-//     margin: 0;
-//     float: left;
-//   }
-//
-//   .logo{
-//     width: 70%;
-//     height: auto;
-//     margin: 8%;
-//     // align-items: center;
-//     border: 1px solid red;
-//     margin: auto;
-//     display: block;
-//   }
-//
+  .top-nav__mobile{
+    display: none;
+  }
 
+  .top-nav{
+    @include dimension(100%,auto);
+    // border: 1px solid blue;
+    display: block;
+    text-align: center;
+    // position: fixed;
+    background: $color_light-blue;
+    padding: 20px;
+      .top-list{
+      @include dimension(100%,30%);
+      // border: 1px solid red;
+       .top-nav-list {
+        @include dimension(100%,auto);
+        display: inline;
+        // border: 1px solid green;
+        margin: 0 2%;
+        font-size: 24px;
+        font-weight: bold;
+        .top-nav-link{
+          color: $color_gray;
+          list-style: none;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 
+  .logo__aye-empanadas{
+    width: 100%;
+    height: auto;
+    // border: 1px solid red;
+    margin-bottom: 80px;
+    // float: left;
+    top: 8px;
+    position: relative;
+
+  }
+
+  .logo{
+    width: 400px;
+    height: auto;
+    margin: 1%;
+    padding-top: 5%;
+    margin: auto;
+    display: block;
+    // border: 1px solid red;
+  }
+
+  .image-container {
+    width: 80%;
+    height: auto;
+    // border: 1px solid blue;
+    margin-top: 10%;
+    overflow: auto;
+    display: block;    // both together center items
+    margin: auto;     // center items images only
+  }
+
+  .social-photos{
+    width: 30%;
+    height: auto;
+    margin: 1%;
+  }
+
+  // ***********************************************MENU SECTION
+
+   // *************************************************EMPANADAS
+
+  //  ********************************** about
+
+  //**********************************contact us
+
+  // ********************************* footer
+
+  footer{
+    @include dimension (100%,auto);
+    background: $color_gray;
+      p{
+      color: $color_light-white;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 27px;
+      text-align: center;
+      padding: 3%;
+      }
+  }
 
 
 } //end of Tablet screen
