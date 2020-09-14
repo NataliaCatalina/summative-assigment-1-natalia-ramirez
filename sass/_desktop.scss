@@ -1,6 +1,6 @@
 @media screen and (min-width: 800px) {
 
-.top-nav__mobile{
+.menu-icon__menu{
   display: none;
 }
 
@@ -20,7 +20,7 @@
       display: inline;
       // border: 1px solid green;
       margin: 0 2%;
-      font-size: 24px;
+      font-size: 20px;
       font-weight: bold;
       .top-nav-link{
         color: $color_gray;
@@ -39,6 +39,24 @@
 //   z-index: -1
 // }
 
+.fa-facebook-square{
+  // border: 1px solid white;
+  width: 52px;
+height: 42px;
+margin-left:95%;
+margin-top: 467px;
+position: absolute;
+position: fixed;
+}
+.fa-instagram-square{
+  // border: 1px solid white;
+  width: 52px;
+height: 42px;
+margin-left: 95%;
+margin-top: 525px;
+position: absolute;
+position: fixed;
+}
 
 .logo__aye-empanadas{
   width: 100%;
@@ -58,7 +76,6 @@
   padding-top: 5%;
   margin: auto;
   display: block;
-
   // border: 1px solid red;
 }
 
@@ -76,15 +93,184 @@
   width: 30%;
   height: auto;
   margin: 1%;
+
 }
 
 // ***********************************************MENU SECTION
 
+.title_menu{
+  // border: 1px solid red;
+  h1{
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 4%;
+    color: $color_gray;
+  }
+}
+
+.blue-line{
+  border-bottom: 2px solid $color_light-blue;
+  width: 50%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+.nav__menu{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 2%;
+  margin-bottom: 5%;
+  li{
+    margin: 0 2%;
+    list-style: none;
+    text-align: center;
+    display: inline;
+    a:hover{
+      color: $color_yellow;
+      }
+   }
+ }
+
+ .nav__menu--link{
+   color: $color_gray;
+   text-decoration: none;
+  }
 
 
  // *************************************************EMPANADAS
 
+ .box__empanadas--menu{
+   width: 80%;
+   height: auto;
+   // border: 1px solid blue;
+   min-height: 1000px;
+   margin-left: 20%;
+ }
+
+ .experiment01{
+   width: 40%;
+   float:left;
+   margin: 0;
+   margin: auto;
+   display: block;
+   // overflow: auto;
+ }
+
+ .box__empanadas {
+   // width: 350px;
+   width: 80%;
+   height: auto;
+   background: $color_white;
+   // border: 1px solid purple;
+   margin: auto;
+   margin-bottom: 10px;
+   padding: 10px 10px;
+   border-radius: 10px;
+   display: block;
+ }
+
+.btn__box{
+  width: 100%;
+  height: 20px;
+  margin-top: 30%;
+  // border: 1px solid pink;
+}
+
+ .info__photo {
+   // border: 1px solid white;
+}
+
+.photo-empanadas{
+  width: 80%;
+  height: auto;
+  display: block;    // both together center items
+  margin: auto;     // center items images only
+}
+
+ .info__type-price{
+   // border: 1px solid orange;
+   text-align: center;
+   h2{
+      font-size: 20px;
+      color: $color_gray;
+      margin-top: 5px;
+   }
+ }
+
+ .info__type-price{
+   p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: $color_gray;
+   }
+ }
+
+.ranking-number{
+  width: 10%;
+  height: auto;
+  float: left;
+  display: block;
+  font-weight: 300;
+  // text-align: right;
+}
+
+.empanadas-description{
+  font-weight: 300;
+  font-size: 16px;
+  margin: 4% 0;
+}
+
+.ranking{
+  width: 90%;
+  height: auto;
+  float: left;
+  // border: 1px solid red;
+  text-align: right;
+}
+
+.request-text{
+  // border: 1px solid orange;
+  width: 90%;
+  height: auto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 143%;
+  border-bottom: 1px solid $color_black;
+}
+
+
 //  ********************************** about
+
+.aye-photo__mobil{
+  display: none;
+}
+
+.aye-photo__desktop{
+  display: none;
+  width: 1110px;
+  margin: auto;
+  display: block;
+}
+
+.information-text{
+   width: 60%;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 30px;
+   text-align: center;
+   // border: 1px solid blue;
+   padding: 2%;
+   margin: auto;
+display: block;
+
+ }
 
 //**********************************contact us
 
@@ -109,5 +295,38 @@ footer{
     padding: 3%;
     }
 }
+
+// row and col
+
+
+// .row{
+//   width: 100%;
+//   height: auto;
+//   min-height: 100px;
+//   // 0.border: 1px solid purple;
+//   // background: purple;
+// }
+//
+// .col{
+//   float:left;
+//
+// }
+//
+//   .col-s-1 {width: 8.33%;}
+//   .col-s-2 {width: 16.66%;}
+//   .col-s-3 {width: 25%;}
+//   .col-s-4 {width: 33.33%;}
+//   .col-s-5 {width: 41.66%;}
+//   .col-s-6 {width: 50%;}
+//   .col-s-7 {width: 58.33%;}
+//   .col-s-8 {width: 66.66%;}
+//   .col-s-9 {width: 75%;}
+//   .col-s-10 {width: 83.33%;}
+//   .col-s-11 {width: 91.66%;}
+//   .col-s-12 {width: 100%;}
+//
+
+
+
 
 }  //end of Desktop screen

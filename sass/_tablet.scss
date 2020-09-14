@@ -1,6 +1,6 @@
 @media screen and (min-width: 601px) and (max-width: 799px){
 
-  .top-nav__mobile{
+  .menu-icon__menu{
     display: none;
   }
 
@@ -20,7 +20,7 @@
         display: inline;
         // border: 1px solid green;
         margin: 0 2%;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: bold;
         .top-nav-link{
           color: $color_gray;
@@ -29,6 +29,25 @@
         }
       }
     }
+  }
+
+  .fa-facebook-square{
+    // border: 1px solid white;
+    width: 52px;
+  height: 42px;
+  margin-left:90%;
+  margin-top: 247px;
+  position: absolute;
+  position: fixed;
+  }
+  .fa-instagram-square{
+    // border: 1px solid white;
+    width: 52px;
+  height: 42px;
+  margin-left: 90%;
+  margin-top: 295px;
+  position: absolute;
+  position: fixed;
   }
 
   .logo__aye-empanadas{

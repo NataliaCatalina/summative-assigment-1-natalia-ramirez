@@ -18,14 +18,6 @@
 .menu__box--icon {
   color: #E8AA3F; }
 
-.information-text {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
-  text-align: center;
-  margin: 10%; }
-
 .information-text__contact {
   font-style: normal;
   font-weight: 300;
@@ -252,10 +244,21 @@
     line-height: 143%;
     border-bottom: 1px solid #000000; }
 
-  .aye-photo {
+  .aye-photo__mobil {
     width: 80%;
     margin: auto;
     display: block; }
+
+  .aye-photo__desktop {
+    display: none; }
+
+  .information-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    margin: 10%; }
 
   .map {
     width: 100%;
@@ -275,7 +278,7 @@
       text-align: center;
       padding: 3%; } }
 @media screen and (min-width: 601px) and (max-width: 799px) {
-  .top-nav__mobile {
+  .menu-icon__menu {
     display: none; }
 
   .top-nav {
@@ -293,12 +296,28 @@
         height: auto;
         display: inline;
         margin: 0 2%;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: bold; }
         .top-nav .top-list .top-nav-list .top-nav-link {
           color: #565759;
           list-style: none;
           text-decoration: none; }
+
+  .fa-facebook-square {
+    width: 52px;
+    height: 42px;
+    margin-left: 90%;
+    margin-top: 247px;
+    position: absolute;
+    position: fixed; }
+
+  .fa-instagram-square {
+    width: 52px;
+    height: 42px;
+    margin-left: 90%;
+    margin-top: 295px;
+    position: absolute;
+    position: fixed; }
 
   .logo__aye-empanadas {
     width: 100%;
@@ -341,7 +360,7 @@
       text-align: center;
       padding: 3%; } }
 @media screen and (min-width: 800px) {
-  .top-nav__mobile {
+  .menu-icon__menu {
     display: none; }
 
   .top-nav {
@@ -359,12 +378,28 @@
         height: auto;
         display: inline;
         margin: 0 2%;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: bold; }
         .top-nav .top-list .top-nav-list .top-nav-link {
           color: #565759;
           list-style: none;
           text-decoration: none; }
+
+  .fa-facebook-square {
+    width: 52px;
+    height: 42px;
+    margin-left: 95%;
+    margin-top: 467px;
+    position: absolute;
+    position: fixed; }
+
+  .fa-instagram-square {
+    width: 52px;
+    height: 42px;
+    margin-left: 95%;
+    margin-top: 525px;
+    position: absolute;
+    position: fixed; }
 
   .logo__aye-empanadas {
     width: 100%;
@@ -393,6 +428,133 @@
     width: 30%;
     height: auto;
     margin: 1%; }
+
+  .title_menu h1 {
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 4%;
+    color: #565759; }
+
+  .blue-line {
+    border-bottom: 2px solid #A3CEF1;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    display: block; }
+
+  .nav__menu {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 2%;
+    margin-bottom: 5%; }
+    .nav__menu li {
+      margin: 0 2%;
+      list-style: none;
+      text-align: center;
+      display: inline; }
+      .nav__menu li a:hover {
+        color: #E8AA3F; }
+
+  .nav__menu--link {
+    color: #565759;
+    text-decoration: none; }
+
+  .box__empanadas--menu {
+    width: 80%;
+    height: auto;
+    min-height: 1000px;
+    margin-left: 20%; }
+
+  .experiment01 {
+    width: 40%;
+    float: left;
+    margin: 0;
+    margin: auto;
+    display: block; }
+
+  .box__empanadas {
+    width: 80%;
+    height: auto;
+    background: #FFFFFF;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    display: block; }
+
+  .btn__box {
+    width: 100%;
+    height: 20px;
+    margin-top: 30%; }
+
+  .photo-empanadas {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: auto; }
+
+  .info__type-price {
+    text-align: center; }
+    .info__type-price h2 {
+      font-size: 20px;
+      color: #565759;
+      margin-top: 5px; }
+
+  .info__type-price p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #565759; }
+
+  .ranking-number {
+    width: 10%;
+    height: auto;
+    float: left;
+    display: block;
+    font-weight: 300; }
+
+  .empanadas-description {
+    font-weight: 300;
+    font-size: 16px;
+    margin: 4% 0; }
+
+  .ranking {
+    width: 90%;
+    height: auto;
+    float: left;
+    text-align: right; }
+
+  .request-text {
+    width: 90%;
+    height: auto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 143%;
+    border-bottom: 1px solid #000000; }
+
+  .aye-photo__mobil {
+    display: none; }
+
+  .aye-photo__desktop {
+    display: none;
+    width: 1110px;
+    margin: auto;
+    display: block; }
+
+  .information-text {
+    width: 60%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    padding: 2%;
+    margin: auto;
+    display: block; }
 
   .map {
     width: 100%;
