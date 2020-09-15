@@ -102,6 +102,14 @@ $('.read-less-btn').on('click', function(){
   $('.read-less-btn').hide();
   $('.read-more-btn').show();
 });
+  });
+//------------- reload
+
+$(document).ready(function () {
+            $('.delet-cart').click(function () {
+                location.reload(true);
+                alert('Reloading Page');
+            });
 
 
 

@@ -233,6 +233,7 @@
 
 .cart{
   width: 90%;
+  height: auto;
   margin: auto;
   display: block;
 
@@ -241,19 +242,71 @@
  .box__cart--01{
    width: 100%;
    height: auto;
-   border:1px solid red;
-   text-align: left;
+   // border:1px solid red;
+   margin-top: 3%;
+   border-right: 1px solid $color_light-blue;
+
 }
 
 .box__cart--02{
-  width: 100%;
-  height: auto;
-  border:1px solid blue;
+  // width: 100%;
+  // border: 1px solid red;
+//   height: auto;
+//   border:1px solid blue;
+  margin-top: 3%;
+  padding-right: 5px;
+//
 }
 
 .price{
-  margin-left: 45%;
+  padding-left:150px;
 }
+.totalAmount{
+  text-align: center;
+
+  // margin-right: 20px;
+}
+
+
+.delet-cart{
+  // border: 1px solid pink;
+  float: right;
+}
+
+
+#calculate {
+  width: 318px;
+  height: 40px;
+  left: 786px;
+  background: $color_yellow;
+  color: $color_white;
+  border-radius: 10px;
+  margin: 1% auto;
+  display: block;
+}
+
+#pay {
+  width: 318px;
+  height: 40px;
+  left: 786px;
+  background: $color_yellow;
+  color: $color_white;
+  border-radius: 10px;
+  margin: 1% auto;
+  display: block;
+}
+
+.credit-card{
+  width: 40%;
+  margin: 3% auto;
+  display: block;
+
+}
+
+//-------------------------------------- thanks
+
+
+
 
 
   //  ********************************** about

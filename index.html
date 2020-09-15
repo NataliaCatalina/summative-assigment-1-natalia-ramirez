@@ -114,7 +114,7 @@
 
             <div class="info__type-price col col-6">
               <h2>Beef</h2>
-              <pr><span class="itemPrice">6.50</span></pr>
+              <pre><span class="itemPrice">6.50</span></pre>
 
               <div class="btn__box">
                 <i class="fas fa-arrow-circle-down menu__box--icon read-more-btn"></i>
@@ -445,7 +445,7 @@
 
      </section> <!-- end menu -->
 
-    <section id="cart" class="row clearfix cart">
+    <section id="cart">
 
       <div >
         <div class="title_menu">
@@ -454,29 +454,49 @@
         </div>
       </div>
 
-      <div class="box__cart--01 col col-lg-6">
-          <div id="cart" class="row cart">
-              <div id="items" class="col items">
-                <h3> Items </h3>
-              </div>
-              <div id="price" class=" col price">
-                <h3> Price </h3>
-              </div>
-              <br>
-              <button id="calculate">Calculate</button>
-              <div class="row totalAmount">
-                <h3 class="col"> Total amount: </h3> <span id="amount"> 0.00</span>
-              </div>
+      <div class="row clearfix cart">
+
+        <div class="box__cart--01 col col-lg-6">
+            <div id="cart" class="row cart">
+                <i class="fas fa-times delet-cart"></i>
+                <div id="items" class="col items">
+                  <h3> Items </h3>
+                </div>
+                <div id="price" class=" col price">
+                  <h3> Price </h3>
+                </div>
+                <br>
+            </div>
+        </div>
+
+
+        <div class="box__cart--02  col col-lg-6">
+          <button id="calculate">Calculate</button>
+          <div class="totalAmount ">
+            <h3 class=""> Total amount:<span id="amount"> 0.00</span> </h3>
           </div>
-      </div>
+          <div class="credit-card row clearfix">
+            <p>Pay with Credit Card</p>
+            <input class="col col-lg-12" type="text" name="" placeholder="Card Number">
+            <input class="col col-lg-6" type="text" name="" placeholder="MM/YY">
+            <input class="col col-lg-6" type="text" name="s" placeholder="CVC">
+          </div>
+          <button id="pay">Pay</button>
+        </div>
 
-<div class="box__cart--02  col.col-lg-6">
-
-  <p>hello</p>
-
-</div>
+      </div> <!-- end row car -->
 
     </section> <!-- end section cart-->
+
+    <section id="thanks">
+      <div class="pop-up">
+        <div class="bar-container">
+
+        </div>
+
+      </div>
+
+    </section>
 
     <section id="about">
 

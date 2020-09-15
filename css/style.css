@@ -47,8 +47,7 @@
 .row {
   width: 100%;
   height: auto;
-  min-height: 100px;
-  border: 1px solid purple; }
+  min-height: 100px; }
 
 .col {
   float: left; }
@@ -525,22 +524,53 @@
 
   .cart {
     width: 90%;
+    height: auto;
     margin: auto;
     display: block; }
 
   .box__cart--01 {
     width: 100%;
     height: auto;
-    border: 1px solid red;
-    text-align: left; }
+    margin-top: 3%;
+    border-right: 1px solid #A3CEF1; }
 
   .box__cart--02 {
-    width: 100%;
-    height: auto;
-    border: 1px solid blue; }
+    margin-top: 3%;
+    padding-right: 5px; }
 
   .price {
-    margin-left: 45%; }
+    padding-left: 150px; }
+
+  .totalAmount {
+    text-align: center; }
+
+  .delet-cart {
+    float: right; }
+
+  #calculate {
+    width: 318px;
+    height: 40px;
+    left: 786px;
+    background: #E8AA3F;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin: 1% auto;
+    display: block; }
+
+  #pay {
+    width: 318px;
+    height: 40px;
+    left: 786px;
+    background: #E8AA3F;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin: 1% auto;
+    display: block; }
+
+  .credit-card {
+    width: 40%;
+    margin: 3% auto;
+    display: block; }
 
   .aye-photo__mobil {
     display: none; }
