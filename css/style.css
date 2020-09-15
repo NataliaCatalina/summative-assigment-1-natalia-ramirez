@@ -462,27 +462,16 @@
     text-decoration: none; }
 
   .box__empanadas--menu {
-    width: 80%;
+    width: 90%;
     height: auto;
-    min-height: 1000px;
-    margin-left: 20%; }
-
-  .experiment01 {
-    width: 40%;
-    float: left;
-    margin: 0;
-    margin: auto;
-    display: block; }
+    margin: auto; }
 
   .box__empanadas {
-    width: 80%;
     height: auto;
     background: #FFFFFF;
-    margin: auto;
-    margin-bottom: 10px;
-    padding: 10px 10px;
-    border-radius: 10px;
-    display: block; }
+    margin: 1%;
+    padding: 5px;
+    border-radius: 10px; }
 
   .btn__box {
     width: 100%;
@@ -490,7 +479,7 @@
     margin-top: 30%; }
 
   .photo-empanadas {
-    width: 80%;
+    width: 65%;
     height: auto;
     display: block;
     margin: auto; }
@@ -503,10 +492,7 @@
       margin-top: 5px; }
 
   .info__type-price p {
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
-    line-height: 24px;
     color: #565759; }
 
   .ranking-number {
@@ -571,7 +557,43 @@
       font-size: 18px;
       line-height: 27px;
       text-align: center;
-      padding: 3%; } }
+      padding: 3%; }
+
+  .col-lg-1 {
+    width: 8.33%; }
+
+  .col-lg-2 {
+    width: 16.66%; }
+
+  .col-lg-3 {
+    width: 25%; }
+
+  .col-lg-4 {
+    width: 31.33%; }
+
+  .col-lg-5 {
+    width: 41.66%; }
+
+  .col-lg-6 {
+    width: 50%; }
+
+  .col-lg-7 {
+    width: 58.33%; }
+
+  .col-lg-8 {
+    width: 66.66%; }
+
+  .col-lg-9 {
+    width: 75%; }
+
+  .col-lg-10 {
+    width: 83.33%; }
+
+  .col-lg-11 {
+    width: 91.66%; }
+
+  .col-lg-12 {
+    width: 100%; } }
 body {
   background: #E7ECEF; }
 

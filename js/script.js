@@ -2,7 +2,7 @@ console.log('js');
 
 
 
-$('#drop-nav').hide();
+$('#drop-nav, .read-less-btn').hide();
 
 // $('#empanadas-btn').click(funtion(){
 //   $('empanadas').show();
@@ -42,6 +42,17 @@ $('.read-less-btn').on('click', function(){
      sample.style.display = 'none';
 
   });
+
+  $('.read-more-btn').click(function(){
+    // $('.box__empanadas').css('margin-bottom','100px')
+  // $('#house').css('color', 'black');''
+  $('.read-more-btn').hide();
+  $('.read-less-btn').show();
+  });
+  $('.read-less-btn').click(function(){
+  $('.read-less-btn').hide();
+  $('.read-more-btn').show();
+});
 
 
 
