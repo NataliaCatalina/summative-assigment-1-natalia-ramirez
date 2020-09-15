@@ -305,6 +305,35 @@
 
 //-------------------------------------- thanks
 
+.pop-up{
+  width: 100%;
+  height: 1024px;
+  background: $color_gray;
+  opacity: 80%;
+  border: 1px solid yellow;
+  i {
+    width: 80px;
+    height: 80px;
+    // left: 86.25%;
+    // right: 9.44%;
+    // top: 7.81%;
+    //  bottom: 86.13%;
+  }
+}
+
+.white-container {
+  border: 1px solid pink;
+  background: $color_light-white;
+  width: 519px;
+height: 466px;
+border-radius: 10px;
+margin: auto;
+// padding-top: 300px;
+
+
+// margin-top: 300px;
+
+}
 
 
 
