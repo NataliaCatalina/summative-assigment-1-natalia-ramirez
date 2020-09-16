@@ -1,5 +1,6 @@
 @media screen and (max-width:600px){
 
+
 .top-nav{
   display: none;
 }
@@ -121,18 +122,25 @@ a:hover{
    width: 100%;
    height: auto;
    border: 1px solid blue;
+   margin: auto;
+   // display: block;
  }
 
  .box__empanadas {
-   width: 350px;
+   width: 70%;
+   margin-bottom: 10px;
    height: auto;
    background: $color_white;
-   // border: 1px solid purple;
-   margin: auto;
-   margin-bottom: 10px;
+   border: 1px solid purple;
+
+
+   margin-left: 15%;
    padding: 10px 10px;
    border-radius: 10px;
-   display: block;
+   // display: block;
+   // margin:2% auto;
+
+
  }
 
 .btn__box{

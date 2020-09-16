@@ -180,17 +180,18 @@
   .box__empanadas--menu {
     width: 100%;
     height: auto;
-    border: 1px solid blue; }
+    border: 1px solid blue;
+    margin: auto; }
 
   .box__empanadas {
-    width: 350px;
+    width: 70%;
+    margin-bottom: 10px;
     height: auto;
     background: #FFFFFF;
-    margin: auto;
-    margin-bottom: 10px;
+    border: 1px solid purple;
+    margin-left: 15%;
     padding: 10px 10px;
-    border-radius: 10px;
-    display: block; }
+    border-radius: 10px; }
 
   .btn__box {
     width: 100%;
@@ -578,9 +579,13 @@
     background: #565759;
     opacity: 80%;
     border: 1px solid yellow; }
-    .pop-up i {
-      width: 80px;
-      height: 80px; }
+    .pop-up .fa-times {
+      font-size: 30px;
+      width: 100px;
+      height: 100px;
+      float: right;
+      color: #E7ECEF;
+      margin-top: 20px; }
 
   .white-container {
     border: 1px solid pink;
@@ -588,7 +593,37 @@
     width: 519px;
     height: 466px;
     border-radius: 10px;
-    margin: auto; }
+    text-align: center;
+    margin: 15% auto;
+    display: block; }
+    .white-container .fa-check-circle {
+      color: #A3CEF1;
+      font-size: 60px;
+      margin-top: 10%; }
+
+  #progressbar {
+    width: 80%;
+    margin: auto;
+    display: block; }
+
+  .ui-progressbar {
+    position: relative; }
+
+  .progress-label {
+    position: absolute;
+    left: 50%;
+    top: 4px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff; }
+
+  .ok-button {
+    width: 150px;
+    height: 40px;
+    background: #E8AA3F;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin: 5% auto;
+    align-items: center; }
 
   .aye-photo__mobil {
     display: none; }

@@ -311,13 +311,13 @@
   background: $color_gray;
   opacity: 80%;
   border: 1px solid yellow;
-  i {
-    width: 80px;
-    height: 80px;
-    // left: 86.25%;
-    // right: 9.44%;
-    // top: 7.81%;
-    //  bottom: 86.13%;
+  .fa-times {
+    font-size: 30px;
+    width: 100px;
+    height: 100px;
+    float: right;
+    color: $color_light-white;
+    margin-top: 20px;
   }
 }
 
@@ -325,16 +325,47 @@
   border: 1px solid pink;
   background: $color_light-white;
   width: 519px;
-height: 466px;
-border-radius: 10px;
-margin: auto;
-// padding-top: 300px;
+  height: 466px;
+  border-radius: 10px;
+  text-align: center;
+  margin:15% auto;
+  display: block;
+  .fa-check-circle{
+    color: $color_light-blue;
+    font-size: 60px;
+    margin-top: 10%;
+  }
+}
 
-
-// margin-top: 300px;
+#progressbar{
+  width: 80%;
+  margin: auto;
+  display: block;
 
 }
 
+.ui-progressbar {
+    position: relative;
+  }
+
+.progress-label {
+  position: absolute;
+  left: 50%;
+  top: 4px;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+.ok-button{
+  width: 150px;
+  height: 40px;
+  background: $color_yellow;
+  color: $color_white;
+  border-radius: 10px;
+  margin: 5% auto;
+  // border: 1px solid red;
+  align-items: center;
+}
 
 
 

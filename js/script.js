@@ -14,7 +14,7 @@ $('#drop-nav, .read-less-btn').hide();
 var total =0; //initializing the numeric variable
 
   $('.menu-button').on('click', function(){
-
+    $('cart').show();
 
     //item name from id of button being clicked;
     //this refers to what is being clicked
@@ -110,6 +110,36 @@ $(document).ready(function () {
                 location.reload(true);
                 alert('Reloading Page');
             });
+
+
+//------------- progress bar
+
+$( function() {
+      var progressbar = $( "#progressbar" ),
+        progressLabel = $( ".progress-label" );
+
+      progressbar.progressbar({
+        value: false,
+        change: function() {
+          progressLabel.text("cooking..." +  progressbar.progressbar("value" ) + "%" );
+        },
+        complete: function() {
+          progressLabel.text( "Food ready" );
+        }
+      });
+
+      function progress() {
+        var val = progressbar.progressbar( "value" ) || 0;
+
+        progressbar.progressbar( "value", val + 1 );
+
+        if ( val < 99 ) {
+          setTimeout( progress, 500 );
+        }
+      }
+
+      setTimeout( progress, 5000 );
+    } );
 
 
 
