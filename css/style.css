@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box; }
+  box-sizing: border-box; }
 
 .icon {
   font-size: 42px;
@@ -89,6 +88,9 @@
   width: 100%; }
 
 @media screen and (max-width: 600px) {
+  .go-top {
+    display: none; }
+
   .top-nav {
     display: none; }
 
@@ -102,20 +104,21 @@
     float: right; }
 
   .drop-nav__mobile {
-    background: #A3CEF1;
     width: 100%;
     height: 667px;
+    background: #A3CEF1;
     text-align: center;
     font-size: 36px;
     padding-top: 20%; }
     .drop-nav__mobile li {
-      margin: 0 15%;
       list-style: none;
       text-decoration: none;
+      color: #565759;
+      margin: 0 15%;
       border-bottom: 3px solid #E8AA3F;
       text-align: center; }
       .drop-nav__mobile li a {
-        color: #000000;
+        color: #565759;
         text-decoration: none; }
 
   a:hover {
@@ -124,7 +127,6 @@
   .logo {
     width: 70%;
     height: auto;
-    margin: 8%;
     margin: auto;
     display: block; }
 
@@ -133,11 +135,6 @@
     height: auto;
     margin-top: 10%;
     overflow: auto; }
-    .image-container .image-container {
-      width: 80%;
-      height: auto;
-      margin-top: 10%;
-      overflow: auto; }
 
   .social-photos {
     width: 30%;
@@ -151,9 +148,9 @@
     color: #565759; }
 
   .blue-line {
-    border-bottom: 2px solid #A3CEF1;
     width: 50%;
     height: auto;
+    border-bottom: 2px solid #A3CEF1;
     margin: auto;
     display: block;
     margin-bottom: 5%; }
@@ -179,16 +176,13 @@
 
   .box__empanadas--menu {
     width: 100%;
-    height: auto;
-    border: 1px solid blue;
-    margin: auto; }
+    height: auto; }
 
   .box__empanadas {
     width: 70%;
-    margin-bottom: 10px;
     height: auto;
+    margin-bottom: 10px;
     background: #FFFFFF;
-    border: 1px solid purple;
     margin-left: 15%;
     padding: 10px 10px;
     border-radius: 10px; }
@@ -201,8 +195,8 @@
   .photo-empanadas {
     width: 80%;
     height: auto;
-    display: block;
-    margin: auto; }
+    margin: auto;
+    display: block; }
 
   .info__type-price {
     text-align: center; }
@@ -211,12 +205,14 @@
       color: #565759;
       margin-top: 5px; }
 
-  .info__type-price p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: #565759; }
+  .info__type-price {
+    text-align: center; }
+    .info__type-price h2 {
+      font-size: 20px;
+      font-weight: medium;
+      color: #565759;
+      text-align: center;
+      margin-top: 3px; }
 
   .ranking-number {
     width: 10%;
@@ -245,6 +241,107 @@
     line-height: 143%;
     border-bottom: 1px solid #000000; }
 
+  .cart {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: block; }
+
+  .box__cart--01 {
+    width: 100%;
+    height: auto;
+    margin-top: 3%; }
+
+  .box__cart--02 {
+    margin-top: 3%;
+    padding-right: 5px; }
+
+  .price {
+    padding-left: 150px; }
+
+  .totalAmount {
+    text-align: center; }
+
+  .delet-cart {
+    float: right; }
+
+  #calculate {
+    width: 318px;
+    height: 40px;
+    left: 786px;
+    background: #E8AA3F;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin: 1% auto;
+    display: block; }
+
+  #pay {
+    width: 318px;
+    height: 40px;
+    left: 786px;
+    background: #E8AA3F;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin: 1% auto;
+    display: block; }
+
+  .credit-card {
+    width: 40%;
+    margin: 3% auto;
+    display: block; }
+
+  .pop-up {
+    width: 100%;
+    height: 1024px;
+    background: #565759; }
+    .pop-up .fa-times {
+      width: 100px;
+      height: 100px;
+      font-size: 30px;
+      float: right;
+      color: #E7ECEF;
+      margin-top: 20px;
+      margin-right: 5%; }
+
+  .white-container {
+    width: 450px;
+    height: 400px;
+    margin: auto;
+    display: block;
+    background: #E7ECEF;
+    border-radius: 10px;
+    text-align: center;
+    overflow: auto;
+    border: 1px solid pink; }
+    .white-container .fa-check-circle {
+      color: #A3CEF1;
+      font-size: 60px;
+      margin-top: 10%; }
+
+  #progressbar {
+    width: 80%;
+    margin: auto;
+    display: block; }
+
+  .ui-progressbar {
+    position: relative; }
+
+  .progress-label {
+    position: absolute;
+    left: 50%;
+    top: 4px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff; }
+
+  .ok-button {
+    width: 150px;
+    height: 40px;
+    background: #E8AA3F;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin: 5% auto;
+    align-items: center; }
+
   .aye-photo__mobil {
     width: 80%;
     margin: auto;
@@ -261,10 +358,40 @@
     text-align: center;
     margin: 10%; }
 
-  .map {
-    width: 100%;
+  .contact {
+    width: 80%;
     height: auto;
-    margin: 5%; }
+    margin: auto;
+    display: block;
+    padding: 1%; }
+
+  .contact-form {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: block;
+    padding: 8px; }
+    .contact-form button {
+      width: 70px;
+      height: 25px;
+      background: #E8AA3F;
+      color: white;
+      border-radius: 10px;
+      float: right; }
+
+  form input, form textarea {
+    border: none;
+    display: block;
+    width: 100%;
+    text-indent: 10px; }
+
+  form textarea {
+    height: 120px;
+    padding-top: 1px; }
+
+  .map {
+    width: 90%;
+    height: 359px; }
 
   footer {
     width: 100%;
@@ -300,23 +427,23 @@
         font-size: 20px;
         font-weight: bold; }
         .top-nav .top-list .top-nav-list .top-nav-link {
-          color: #565759;
           list-style: none;
-          text-decoration: none; }
+          text-decoration: none;
+          color: #565759; }
 
   .fa-facebook-square {
     width: 52px;
-    height: 42px;
+    height: auto;
     margin-left: 90%;
-    margin-top: 247px;
+    margin-top: 250px;
     position: absolute;
     position: fixed; }
 
   .fa-instagram-square {
     width: 52px;
-    height: 42px;
+    height: auto;
     margin-left: 90%;
-    margin-top: 295px;
+    margin-top: 300px;
     position: absolute;
     position: fixed; }
 
@@ -328,9 +455,8 @@
     position: relative; }
 
   .logo {
-    width: 400px;
+    width: 40%;
     height: auto;
-    margin: 1%;
     padding-top: 5%;
     margin: auto;
     display: block; }
@@ -338,15 +464,272 @@
   .image-container {
     width: 80%;
     height: auto;
-    margin-top: 10%;
-    overflow: auto;
+    margin: auto;
     display: block;
-    margin: auto; }
+    overflow: auto; }
 
   .social-photos {
     width: 30%;
     height: auto;
     margin: 1%; }
+
+  .title_menu h1 {
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 4%;
+    color: #565759; }
+
+  .blue-line {
+    width: 50%;
+    height: auto;
+    border-bottom: 2px solid #A3CEF1;
+    margin: auto;
+    display: block; }
+
+  .nav__menu {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 2%;
+    margin-bottom: 5%; }
+    .nav__menu li {
+      margin: 0 2%;
+      list-style: none;
+      text-align: center;
+      display: inline; }
+      .nav__menu li a:hover {
+        color: #E8AA3F; }
+
+  .nav__menu--link {
+    color: #565759;
+    text-decoration: none; }
+
+  .box__empanadas--menu {
+    width: 100%;
+    height: auto; }
+
+  .box__empanadas {
+    width: 70%;
+    height: auto;
+    margin-bottom: 10px;
+    background: #FFFFFF;
+    margin-left: 15%;
+    padding: 10px 10px;
+    border-radius: 10px; }
+
+  .btn__box {
+    width: 100%;
+    height: 20px;
+    margin-top: 30%; }
+
+  .photo-empanadas {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: block; }
+
+  .info__type-price {
+    text-align: center; }
+    .info__type-price h2 {
+      font-size: 20px;
+      color: #565759;
+      margin-top: 5px; }
+
+  .info__type-price {
+    text-align: center; }
+    .info__type-price h2 {
+      font-size: 20px;
+      font-weight: medium;
+      color: #565759;
+      text-align: center;
+      margin-top: 3px; }
+
+  .ranking-number {
+    width: 10%;
+    height: auto;
+    float: left;
+    display: block;
+    font-weight: 300; }
+
+  .empanadas-description {
+    font-weight: 300;
+    font-size: 16px;
+    margin: 4% 0; }
+
+  .ranking {
+    width: 90%;
+    height: auto;
+    float: left;
+    text-align: right; }
+
+  .request-text {
+    width: 90%;
+    height: auto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 143%;
+    border-bottom: 1px solid #000000; }
+
+  .cart {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: block; }
+
+  .box__cart--01 {
+    width: 100%;
+    height: auto;
+    margin-top: 3%; }
+
+  .box__cart--02 {
+    margin-top: 3%;
+    padding-right: 5px; }
+
+  .price {
+    padding-left: 150px; }
+
+  .totalAmount {
+    text-align: center; }
+
+  .delet-cart {
+    float: right; }
+
+  #calculate {
+    width: 318px;
+    height: 40px;
+    left: 786px;
+    background: #E8AA3F;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin: 1% auto;
+    display: block; }
+
+  #pay {
+    width: 318px;
+    height: 40px;
+    left: 786px;
+    background: #E8AA3F;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin: 1% auto;
+    display: block; }
+
+  .credit-card {
+    width: 40%;
+    margin: 3% auto;
+    display: block; }
+
+  .pop-up {
+    width: 100%;
+    height: 1024px;
+    background: #565759; }
+    .pop-up .fa-times {
+      width: 100px;
+      height: 100px;
+      font-size: 30px;
+      float: right;
+      color: #E7ECEF;
+      margin-top: 20px;
+      margin-right: 5%; }
+
+  .white-container {
+    width: 450px;
+    height: 400px;
+    margin: auto;
+    display: block;
+    background: #E7ECEF;
+    border-radius: 10px;
+    text-align: center;
+    overflow: auto;
+    border: 1px solid pink; }
+    .white-container .fa-check-circle {
+      color: #A3CEF1;
+      font-size: 60px;
+      margin-top: 10%; }
+
+  #progressbar {
+    width: 80%;
+    margin: auto;
+    display: block; }
+
+  .ui-progressbar {
+    position: relative; }
+
+  .progress-label {
+    position: absolute;
+    left: 50%;
+    top: 4px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff; }
+
+  .ok-button {
+    width: 150px;
+    height: 40px;
+    background: #E8AA3F;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin: 5% auto;
+    align-items: center; }
+
+  .aye-photo__mobil {
+    display: none; }
+
+  .aye-photo__desktop {
+    width: 1110px;
+    height: auto;
+    margin: auto;
+    display: block; }
+
+  .information-text {
+    width: 60%;
+    height: auto;
+    font-size: 18px;
+    font-weight: normal;
+    color: #000000;
+    text-align: center;
+    padding: 2%;
+    margin: auto;
+    display: block; }
+
+  .contact {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: block;
+    padding: 1%; }
+
+  .contact-form {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    display: block;
+    padding: 8px; }
+    .contact-form button {
+      width: 70px;
+      height: 25px;
+      background: #E8AA3F;
+      color: white;
+      border-radius: 10px;
+      float: right; }
+
+  form input, form textarea {
+    border: none;
+    display: block;
+    width: 100%;
+    text-indent: 10px; }
+
+  form textarea {
+    height: 120px;
+    padding-top: 1px; }
+
+  .information-text__contact {
+    padding-left: 1%; }
+
+  .map {
+    width: 100%;
+    height: 359px; }
 
   footer {
     width: 100%;
@@ -382,13 +765,13 @@
         font-size: 20px;
         font-weight: bold; }
         .top-nav .top-list .top-nav-list .top-nav-link {
-          color: #565759;
           list-style: none;
-          text-decoration: none; }
+          text-decoration: none;
+          color: #565759; }
 
   .fa-facebook-square {
     width: 52px;
-    height: 30px;
+    height: auto;
     margin-left: 95%;
     margin-top: 250px;
     position: absolute;
@@ -396,7 +779,7 @@
 
   .fa-instagram-square {
     width: 52px;
-    height: 42px;
+    height: auto;
     margin-left: 95%;
     margin-top: 300px;
     position: absolute;
@@ -412,7 +795,6 @@
   .logo {
     width: 40%;
     height: auto;
-    margin: 1%;
     padding-top: 5%;
     margin: auto;
     display: block; }
@@ -420,10 +802,9 @@
   .image-container {
     width: 80%;
     height: auto;
-    margin-top: 10%;
-    overflow: auto;
+    margin: auto;
     display: block;
-    margin: auto; }
+    overflow: auto; }
 
   .social-photos {
     width: 30%;
@@ -437,9 +818,9 @@
     color: #565759; }
 
   .blue-line {
-    border-bottom: 2px solid #A3CEF1;
     width: 50%;
     height: auto;
+    border-bottom: 2px solid #A3CEF1;
     margin: auto;
     display: block; }
 
@@ -468,7 +849,6 @@
     margin: auto; }
 
   .box__empanadas {
-    height: auto;
     background: #FFFFFF;
     margin: 1%;
     padding: 5px;
@@ -482,19 +862,17 @@
   .photo-empanadas {
     width: 65%;
     height: auto;
-    display: block;
-    margin: auto; }
+    margin: auto;
+    display: block; }
 
   .info__type-price {
     text-align: center; }
     .info__type-price h2 {
       font-size: 20px;
+      font-weight: medium;
       color: #565759;
-      margin-top: 5px; }
-
-  .info__type-price p {
-    font-size: 16px;
-    color: #565759; }
+      text-align: center;
+      margin-top: 3px; }
 
   .ranking-number {
     width: 10%;
@@ -576,26 +954,26 @@
   .pop-up {
     width: 100%;
     height: 1024px;
-    background: #565759;
-    opacity: 80%;
-    border: 1px solid yellow; }
+    background: #565759; }
     .pop-up .fa-times {
-      font-size: 30px;
       width: 100px;
       height: 100px;
+      font-size: 30px;
       float: right;
       color: #E7ECEF;
-      margin-top: 20px; }
+      margin-top: 20px;
+      margin-right: 5%; }
 
   .white-container {
-    border: 1px solid pink;
+    width: 550px;
+    height: 400px;
+    margin: auto;
+    display: block;
     background: #E7ECEF;
-    width: 519px;
-    height: 466px;
     border-radius: 10px;
     text-align: center;
-    margin: 15% auto;
-    display: block; }
+    overflow: auto;
+    border: 1px solid pink; }
     .white-container .fa-check-circle {
       color: #A3CEF1;
       font-size: 60px;
@@ -629,25 +1007,60 @@
     display: none; }
 
   .aye-photo__desktop {
-    display: none;
-    width: 1110px;
+    width: 60%;
+    height: auto;
     margin: auto;
-    display: block; }
+    display: block;
+    border: 3px dotted #E8AA3F; }
 
   .information-text {
     width: 60%;
-    font-style: normal;
-    font-weight: normal;
+    height: auto;
     font-size: 18px;
-    line-height: 30px;
+    font-weight: normal;
+    color: #000000;
     text-align: center;
     padding: 2%;
     margin: auto;
     display: block; }
 
+  .contact {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: block;
+    padding: 1%; }
+
+  .contact-form {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: block;
+    padding: 8px; }
+    .contact-form button {
+      width: 70px;
+      height: 25px;
+      background: #E8AA3F;
+      color: white;
+      border-radius: 10px;
+      float: right; }
+
+  form input, form textarea {
+    border: none;
+    display: block;
+    width: 100%;
+    text-indent: 10px; }
+
+  form textarea {
+    height: 120px;
+    padding-top: 1px; }
+
+  .information-text__contact {
+    padding-left: 30px; }
+
   .map {
     width: 100%;
-    height: 500px; }
+    height: 359px; }
 
   footer {
     width: 100%;

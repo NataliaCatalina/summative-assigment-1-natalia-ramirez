@@ -3,14 +3,21 @@
   height:$h;
 }
 
-@mixin desktop-title__nav($fs,$c,$fw,$ta,$li){
-  font-size: $fs;
-  color:$c;
-  font-weight:$fw;
-  text-align: $ta;
-  list-style: $li;
+
+@mixin list ($ls,$td,$c){
+  list-style: $ls;
+  text-decoration: $td;
+  color: $c;
 }
 
-@mixin sections-titles (){
-  
+@mixin fonts ($fs,$fw,$c,$ta){
+  font-size: $fs;
+  font-weight: $fw;
+  color:$c;
+  text-align:$ta;
+}
+
+@mixin center ($m,$d){
+  margin: $m;
+  display: $d;
 }

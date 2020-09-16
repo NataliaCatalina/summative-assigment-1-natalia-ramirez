@@ -6,93 +6,79 @@
 
   .top-nav{
     @include dimension(100%,auto);
-    // border: 1px solid blue;
     display: block;
     text-align: center;
-    // position: fixed;
     background: $color_light-blue;
     padding: 20px;
+    // border: 1px solid blue;
       .top-list{
       @include dimension(100%,30%);
       // border: 1px solid red;
       .top-nav-list {
         @include dimension(100%,auto);
         display: inline;
-        // border: 1px solid green;
         margin: 0 2%;
         font-size: 20px;
         font-weight: bold;
+        // border: 1px solid green;
         .top-nav-link{
-          color: $color_gray;
-          list-style: none;
-          text-decoration: none;
+          @include list(none,none,$color_gray)
         }
       }
     }
   }
 
-  // .nav-banner{
-  //   width: 100%;
-  //   // position: fixed;
-  //   top: 0;
-  //   left: 0;
-  //   z-index: -1
-  // }
+
 
   .fa-facebook-square{
-      // border: 1px solid white;
-    width: 52px;
-    height: 30px;
+    @include dimension(52px,auto);
     margin-left:95%;
     margin-top: 250px;
     position: absolute;
     position: fixed;
+    // border: 1px solid white;
   }
 
   .fa-instagram-square{
-    // border: 1px solid white;
-    width: 52px;
-    height: 42px;
+    @include dimension(52px,auto);
     margin-left: 95%;
     margin-top: 300px;
     position: absolute;
     position: fixed;
+    // border: 1px solid white;
   }
 
+
+
   .logo__aye-empanadas{
-    width: 100%;
-    height: auto;
-    // border: 1px solid red;
+    @include dimension(100%,auto);
     margin-bottom: 80px;
-    // float: left;
     top: 8px;
     position: relative;
+    // border: 1px solid red;
   }
 
   .logo{
-    width: 40%;
-    height: auto;
-    margin: 1%;
+    @include dimension(40%,auto);
     padding-top: 5%;
     margin: auto;
     display: block;
     // border: 1px solid red;
   }
 
+//******************************************** social media
+
   .image-container {
-    width: 80%;
-    height: auto;
-    // border: 1px solid blue;
-    margin-top: 10%;
+    @include dimension(80%,auto);
+    @include center (auto,block);
     overflow: auto;
-    display: block;    // both together center items
-    margin: auto;     // center items images only
+    // border: 1px solid red;
   }
 
   .social-photos{
-    width: 30%;
-    height: auto;
+    @include dimension(30%,auto);
     margin: 1%;
+    // border: 1px solid blue;
   }
 
   // ***********************************************MENU SECTION
@@ -108,16 +94,13 @@
   }
 
   .blue-line{
+    @include dimension(50%,auto);
     border-bottom: 2px solid $color_light-blue;
-    width: 50%;
-    height: auto;
-    margin: auto;
-    display: block;
+    @include center (auto,block);
   }
 
   .nav__menu{
-    width: 100%;
-    height: auto;
+    @include dimension(100%,auto);
     text-align: center;
     font-size: 18px;
     padding-top: 2%;
@@ -142,62 +125,47 @@
   // *************************************************EMPANADAS
 
   .box__empanadas--menu{
-    width: 90%;
-    height: auto;
-    // border: 1px solid blue;
+    @include dimension(90%,auto);
     margin: auto;
+    // border: 1px solid blue;
     }
 
   .box__empanadas {
-    // width: 100%;
-    height: auto;
     background: $color_white;
-    // border: 1px solid yellow;
     margin: 1%;
     padding: 5px;
     border-radius: 10px;
-    // display: block;
+    // border: 1px solid yellow;
   }
 
   .btn__box{
-    width: 100%;
-    height: 20px;
+    @include dimension(100%,20px);
     margin-top: 30%;
     // border: 1px solid pink;
   }
 
-  .info__photo {
-    // border: 1px solid white;
-  }
-
   .photo-empanadas{
-    width: 65%;
-    height: auto;
-    display: block;    // both together center items
-    margin: auto;     // center items images only
+    @include dimension(65%,auto);
+    @include center (auto,block);
   }
 
   .info__type-price{
-    // width: 50%;
-    // border: 1px solid orange;
     text-align: center;
+    // border: 1px solid orange;
     h2{
-      font-size: 20px;
-      color: $color_gray;
-      margin-top: 5px;
+      @include fonts (20px,medium,$color_gray, center);
+      margin-top: 3px;
    }
   }
 
-  .info__type-price{
-    p {
-      font-size: 16px;
-      color: $color_gray;
-    }
-  }
+  // .info__type-price{
+  //   p {
+  //     @include fonts (16px,medium,$color_gray, center);
+  //    }
+  // }
 
   .ranking-number{
-    width: 10%;
-    height: auto;
+    @include dimension(10%,auto);
     float: left;
     display: block;
     font-weight: 300;
@@ -211,136 +179,113 @@
   }
 
   .ranking{
-    width: 90%;
-    height: auto;
+    @include dimension(90%,auto);
     float: left;
-    // border: 1px solid red;
     text-align: right;
+    // border: 1px solid red;
   }
 
   .request-text{
-    // border: 1px solid orange;
-    width: 90%;
-    height: auto;
+    @include dimension(90%,auto);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 143%;
     border-bottom: 1px solid $color_black;
+    // border: 1px solid orange;
   }
 
 // ************************************* My cart
 
 .cart{
-  width: 90%;
-  height: auto;
-  margin: auto;
-  display: block;
-
+  @include dimension(90%,auto);
+  @include center (auto,block);
 }
 
  .box__cart--01{
-   width: 100%;
-   height: auto;
-   // border:1px solid red;
+   @include dimension(100%,auto);
    margin-top: 3%;
    border-right: 1px solid $color_light-blue;
-
+   // border:1px solid red;
 }
 
 .box__cart--02{
-  // width: 100%;
-  // border: 1px solid red;
-//   height: auto;
-//   border:1px solid blue;
   margin-top: 3%;
   padding-right: 5px;
-//
 }
 
 .price{
   padding-left:150px;
 }
+
 .totalAmount{
   text-align: center;
-
-  // margin-right: 20px;
 }
-
 
 .delet-cart{
-  // border: 1px solid pink;
   float: right;
+  // border: 1px solid pink;
 }
 
-
 #calculate {
-  width: 318px;
-  height: 40px;
+  @include dimension(318px,40px);
   left: 786px;
   background: $color_yellow;
   color: $color_white;
   border-radius: 10px;
-  margin: 1% auto;
-  display: block;
+  @include center (1% auto,block);
 }
 
 #pay {
-  width: 318px;
-  height: 40px;
+  @include dimension(318px,40px);
   left: 786px;
   background: $color_yellow;
   color: $color_white;
   border-radius: 10px;
-  margin: 1% auto;
-  display: block;
+  @include center (1% auto,block);
 }
 
 .credit-card{
   width: 40%;
-  margin: 3% auto;
-  display: block;
-
+  @include center (3% auto,block);
 }
 
 //-------------------------------------- thanks
 
 .pop-up{
-  width: 100%;
-  height: 1024px;
+  @include dimension(100%,1024px);
   background: $color_gray;
-  opacity: 80%;
-  border: 1px solid yellow;
+  // opacity: 80%;
+  // border: 1px solid yellow;
   .fa-times {
+    @include dimension(100px,100px);
     font-size: 30px;
-    width: 100px;
-    height: 100px;
     float: right;
     color: $color_light-white;
     margin-top: 20px;
+    margin-right: 5%;
+
   }
 }
 
 .white-container {
-  border: 1px solid pink;
+  @include dimension(550px,400px);
+  @include center (auto,block);
   background: $color_light-white;
-  width: 519px;
-  height: 466px;
   border-radius: 10px;
   text-align: center;
-  margin:15% auto;
-  display: block;
+  overflow: auto;
+  border: 1px solid pink;
   .fa-check-circle{
     color: $color_light-blue;
     font-size: 60px;
     margin-top: 10%;
   }
-}
+}     /////------------- need fix
 
 #progressbar{
   width: 80%;
-  margin: auto;
-  display: block;
+  @include center (auto,block);
 
 }
 
@@ -357,14 +302,13 @@
 }
 
 .ok-button{
-  width: 150px;
-  height: 40px;
+  @include dimension(150px,40px);
   background: $color_yellow;
   color: $color_white;
   border-radius: 10px;
   margin: 5% auto;
-  // border: 1px solid red;
   align-items: center;
+  // border: 1px solid red;
 }
 
 
@@ -376,31 +320,60 @@
   }
 
   .aye-photo__desktop{
-    display: none;
-    width: 1110px;
-    margin: auto;
-    display: block;
+    @include dimension(60%,auto);
+    @include center (auto,block);
+    border: 3px dotted $color_yellow;
   }
 
   .information-text{
-    width: 60%;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-    // border: 1px solid blue;
+    @include dimension(60%,auto);
+    @include fonts (18px,normal,$color_black,center);
     padding: 2%;
-    margin: auto;
-    display: block;
+    @include center (auto,block);
+    // border: 1px solid blue;
   }
 
   //**********************************contact us
 
+.contact{
+  @include dimension(80%,auto);
+  @include center (auto,block);
+  padding: 1%;
+  // border: 1px solid green;
+}
+
+.contact-form{
+  @include dimension(80%,auto);
+  @include center (auto,block);
+  padding: 8px;
+  button{
+    @include dimension(70px,25px);
+    background: $color_yellow;
+    color: white;
+    border-radius: 10px;
+    float: right;
+  }
+  }
+
+form input, form textarea {
+	border: none;
+	display: block;
+	width: 100%;
+	text-indent: 10px;
+  }
+form textarea {
+	height: 120px;
+	padding-top: 1px;
+}
+
+.information-text__contact{
+  padding-left: 30px;
+  // border: 1px solid red;
+}
+
+
   .map {
-    width: 100%;
-    height: 500px;
-    // margin: 5%;
+    @include dimension(100%,359px);
   }
 
   // ********************************* footer
