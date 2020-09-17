@@ -7,12 +7,16 @@
 .top-nav{
   display: none;
 }
+.nav-banner{
+  display: none;
+}
+
+//--nav
 
 .top-nav__mobile{
   @include dimension(100%,60px);
   color: $color_light-blue;
   border-bottom: 4px solid $color_light-blue;
-  // border: 1px solid red;
 }
 
 .fa-bars{
@@ -44,7 +48,6 @@ a:hover{
 .logo{
   @include dimension(70%,auto);
   @include center (auto,block);
-  // border: 1px solid red;
 }
 
   //************************social media
@@ -53,27 +56,16 @@ a:hover{
   @include dimension(100%,auto);
   margin-top: 10%;
   overflow: auto;
-  // border: 1px solid blue;
 }
 
 .social-photos{
   @include dimension(30%,auto);
   margin: 1%;
-  // border: 1px solid blue;
 }
 
 
-// ***********************************************MENU SECTION
+// **************MENU SECTION
 
-.title_menu{
-  // border: 1px solid red;
-  h1{
-    text-align: center;
-    margin-bottom: 2%;
-    margin-top: 10%;
-    color: $color_gray;
-  }
-}
 
 .blue-line{
   @include dimension(50%,auto);
@@ -82,49 +74,22 @@ a:hover{
   margin-bottom: 5%;
 }
 
-.nav__menu{
-  @include dimension(100%,auto);
-  text-align: center;
-  font-size: 18px;
-  padding-top: 2%;
-  margin-bottom: 5%;
-  li{
-    margin: 0 2%;
-    list-style: none;
-    text-align: center;
-    display: inline;
-    a:hover{
-      color: $color_yellow;
-      }
-   }
- }
-
- .nav__menu--link{
-   color: $color_gray;
-   text-decoration: none;
-  }
-
- // *************************************************EMPANADAS
+ // ************EMPANADAS
 
  .box__empanadas--menu{
    @include dimension(100%,auto);
-   // border: 1px solid blue;
  }
 
  .box__empanadas {
    @include dimension(70%,auto);
+   @include box($color_white,10px,10px);
    margin-bottom: 10px;
-   background: $color_white;
    margin-left: 15%;
-   padding: 10px 10px;
-   border-radius: 10px;
-   // border: 1px solid purple;
  }
 
 .btn__box{
   @include dimension(100%,20px);
   margin-top: 30%;
-  // border: 1px solid pink;
 }
 
 .photo-empanadas{
@@ -134,19 +99,8 @@ a:hover{
 
  .info__type-price{
    text-align: center;
-   // border: 1px solid orange;
    h2{
-      font-size: 20px;
-      color: $color_gray;
-      margin-top: 5px;
-   }
- }
-
- .info__type-price{
-   text-align: center;
-   // border: 1px solid orange;
-   h2{
-     @include fonts (20px,medium,$color_gray, center);
+     @include fonts (20px,medium,$color_gray,center);
      margin-top: 3px;
   }
  }
@@ -156,20 +110,13 @@ a:hover{
   float: left;
   display: block;
   font-weight: 300;
-  // text-align: right;
 }
 
-.empanadas-description{
-  font-weight: 300;
-  font-size: 16px;
-  margin: 4% 0;
-}
 
 .ranking{
   @include dimension(90%,auto);
   float: left;
   text-align: right;
-  // border: 1px solid red;
 }
 
 .request-text{
@@ -179,7 +126,6 @@ a:hover{
   font-size: 14px;
   line-height: 143%;
   border-bottom: 1px solid $color_black;
-  // border: 1px solid orange;
 }
 
 //------- My cart
@@ -187,14 +133,11 @@ a:hover{
 .cart{
   @include dimension(80%,auto);
   @include center (auto,block);
-  // border:1px solid red;
 }
 
  .box__cart--01{
    @include dimension(100%,auto);
    margin-top: 3%;
-   // border-right: 1px solid $color_light-blue;
-   // border:1px solid red;
 }
 
 .box__cart--02{
@@ -206,54 +149,16 @@ a:hover{
   padding-left:150px;
 }
 
-.totalAmount{
-  text-align: center;
-}
-
 .delet-cart{
   float: right;
-  // border: 1px solid pink;
 }
 
-#calculate {
-  @include dimension(318px,40px);
-  left: 786px;
-  background: $color_yellow;
-  color: $color_white;
-  border-radius: 10px;
-  @include center (1% auto,block);
-}
-
-#pay {
-  @include dimension(318px,40px);
-  left: 600px;
-  background: $color_yellow;
-  color: $color_white;
-  border-radius: 10px;
-  @include center (1% auto,block);
-}
-
-.credit-card{
-  width: 40%;
-  @include center (3% auto,block);
-}
-
-//-------------------------------------- thanks
+//------------- thanks
 
 .pop-up{
-  @include dimension(100%,1024px);
+  @include dimension(100%,500px);
   background: $color_gray;
-  // opacity: 80%;
-  // border: 1px solid yellow;
-  .fa-times {
-    @include dimension(100px,100px);
-    font-size: 30px;
-    float: right;
-    color: $color_light-white;
-    margin-top: 20px;
-    margin-right: 5%;
-
-  }
+  padding-top: 10px;
 }
 
 .white-container {
@@ -263,22 +168,21 @@ a:hover{
   border-radius: 10px;
   text-align: center;
   overflow: auto;
-  border: 1px solid pink;
   .fa-check-circle{
     color: $color_light-blue;
     font-size: 60px;
     margin-top: 10%;
   }
-}     /////------------- need fix
+}
 
 #progressbar{
   width: 80%;
   @include center (auto,block);
-
 }
 
 .ui-progressbar {
-    position: relative;
+  color: $color_light-blue;
+  position: relative;
   }
 
 .progress-label {
@@ -289,23 +193,13 @@ a:hover{
   text-shadow: 1px 1px 0 #fff;
 }
 
-.ok-button{
-  @include dimension(150px,40px);
-  background: $color_yellow;
-  color: $color_white;
-  border-radius: 10px;
-  margin: 5% auto;
-  align-items: center;
-  // border: 1px solid red;
-}
 
 
 //  ********************************** about
 
 .aye-photo__mobil{
   width: 80%;
-  margin: auto;
-  display: block;
+  @include center (auto,block);
 }
 
 .aye-photo__desktop{
@@ -313,12 +207,7 @@ a:hover{
 }
 
 .information-text{
-     font-style: normal;
-     font-weight: normal;
-     font-size: 18px;
-     line-height: 30px;
-     text-align: center;
-     // border: 1px solid blue;
+     @include fonts (18px,normal,$color_black,center);
      margin: 10%;
    }
 
@@ -329,7 +218,6 @@ a:hover{
 @include dimension(80%,auto);
 @include center (auto,block);
 padding: 1%;
-// border: 1px solid green;
 }
 
 .contact-form{
@@ -356,11 +244,6 @@ height: 120px;
 padding-top: 1px;
 }
 
-.information-text__contact{
-// padding: 10px;
-// border: 1px solid red;
-}
-
 
 .map {
   @include dimension(90%,359px);
@@ -372,42 +255,10 @@ footer{
   @include dimension (100%,auto);
   background: $color_gray;
     p{
-    color: $color_light-white;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 27px;
-    text-align: center;
+     @include fonts (18px,bold,$color_light-white,center);
     padding: 3%;
     }
 }
-
-// .row{
-//   width: 100%;
-//   height: auto;
-//   min-height: 100px;
-//   // 0.border: 1px solid purple;
-//   // background: purple;
-// }
-//
-// .col{
-//   float:left;
-// }
-//
-// .col-1 {width: 8.33%;}
-// .col-2 {width: 16.66%;}
-// .col-3 {width: 25%;}
-// .col-4 {width: 33.33%;}
-// .col-5 {width: 41.66%;}
-// .col-6 {width: 50%;}
-// .col-7 {width: 58.33%;}
-// .col-8 {width: 66.66%;}
-// .col-9 {width: 75%;}
-// .col-10 {width: 83.33%;}
-// .col-11 {width: 91.66%;}
-// .col-12 {width: 100%;}
-//
-//
 
 
 } //end of mobile

@@ -9,3 +9,36 @@
   border-bottom: 2px solid $color_yellow;
   background: $color_white;
   }
+
+
+  #calculate {
+    @include dimension(318px,40px);
+    left: 786px;
+    background: $color_yellow;
+    color: $color_white;
+    border-radius: 10px;
+    @include center (1% auto,block);
+  }
+
+  #pay {
+    @include dimension(318px,40px);
+    left: 600px;
+    background: $color_yellow;
+    color: $color_white;
+    border-radius: 10px;
+    @include center (1% auto,block);
+  }
+
+  .credit-card{
+    width: 40%;
+    @include center (3% auto,block);
+  }
+
+  .ok-button{
+    @include dimension(150px,40px);
+    background: $color_yellow;
+    color: $color_white;
+    border-radius: 10px;
+    margin: 5% auto;
+    align-items: center;
+  }

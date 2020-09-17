@@ -14,8 +14,19 @@
   height: auto;
   padding: 5px; }
 
+.title_menu h1 {
+  text-align: center;
+  margin-bottom: 2%;
+  margin-top: 4%;
+  color: #565759; }
+
 .menu__box--icon {
   color: #E8AA3F; }
+
+.empanadas-description {
+  font-weight: 300;
+  font-size: 16px;
+  margin: 4% 0; }
 
 .information-text__contact {
   font-style: normal;
@@ -23,6 +34,9 @@
   font-size: 18px;
   line-height: 30px;
   margin-left: 10%; }
+
+.totalAmount {
+  text-align: center; }
 
 .order-now__button {
   font-size: 30px;
@@ -38,6 +52,40 @@
   border-top: 2px solid #E8AA3F;
   border-bottom: 2px solid #E8AA3F;
   background: #FFFFFF; }
+
+#calculate {
+  width: 318px;
+  height: 40px;
+  left: 786px;
+  background: #E8AA3F;
+  color: #FFFFFF;
+  border-radius: 10px;
+  margin: 1% auto;
+  display: block; }
+
+#pay {
+  width: 318px;
+  height: 40px;
+  left: 600px;
+  background: #E8AA3F;
+  color: #FFFFFF;
+  border-radius: 10px;
+  margin: 1% auto;
+  display: block; }
+
+.credit-card {
+  width: 40%;
+  margin: 3% auto;
+  display: block; }
+
+.ok-button {
+  width: 150px;
+  height: 40px;
+  background: #E8AA3F;
+  color: #FFFFFF;
+  border-radius: 10px;
+  margin: 5% auto;
+  align-items: center; }
 
 .clearfix::after {
   clear: both;
@@ -95,6 +143,9 @@
   .top-nav {
     display: none; }
 
+  .nav-banner {
+    display: none; }
+
   .top-nav__mobile {
     width: 100%;
     height: 60px;
@@ -142,12 +193,6 @@
     height: auto;
     margin: 1%; }
 
-  .title_menu h1 {
-    text-align: center;
-    margin-bottom: 2%;
-    margin-top: 10%;
-    color: #565759; }
-
   .blue-line {
     width: 50%;
     height: auto;
@@ -156,25 +201,6 @@
     display: block;
     margin-bottom: 5%; }
 
-  .nav__menu {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    font-size: 18px;
-    padding-top: 2%;
-    margin-bottom: 5%; }
-    .nav__menu li {
-      margin: 0 2%;
-      list-style: none;
-      text-align: center;
-      display: inline; }
-      .nav__menu li a:hover {
-        color: #E8AA3F; }
-
-  .nav__menu--link {
-    color: #565759;
-    text-decoration: none; }
-
   .box__empanadas--menu {
     width: 100%;
     height: auto; }
@@ -182,11 +208,11 @@
   .box__empanadas {
     width: 70%;
     height: auto;
-    margin-bottom: 10px;
     background: #FFFFFF;
-    margin-left: 15%;
-    padding: 10px 10px;
-    border-radius: 10px; }
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: 15%; }
 
   .btn__box {
     width: 100%;
@@ -203,13 +229,6 @@
     text-align: center; }
     .info__type-price h2 {
       font-size: 20px;
-      color: #565759;
-      margin-top: 5px; }
-
-  .info__type-price {
-    text-align: center; }
-    .info__type-price h2 {
-      font-size: 20px;
       font-weight: medium;
       color: #565759;
       text-align: center;
@@ -221,11 +240,6 @@
     float: left;
     display: block;
     font-weight: 300; }
-
-  .empanadas-description {
-    font-weight: 300;
-    font-size: 16px;
-    margin: 4% 0; }
 
   .ranking {
     width: 90%;
@@ -260,49 +274,14 @@
   .price {
     padding-left: 150px; }
 
-  .totalAmount {
-    text-align: center; }
-
   .delet-cart {
     float: right; }
 
-  #calculate {
-    width: 318px;
-    height: 40px;
-    left: 786px;
-    background: #E8AA3F;
-    color: #FFFFFF;
-    border-radius: 10px;
-    margin: 1% auto;
-    display: block; }
-
-  #pay {
-    width: 318px;
-    height: 40px;
-    left: 600px;
-    background: #E8AA3F;
-    color: #FFFFFF;
-    border-radius: 10px;
-    margin: 1% auto;
-    display: block; }
-
-  .credit-card {
-    width: 40%;
-    margin: 3% auto;
-    display: block; }
-
   .pop-up {
     width: 100%;
-    height: 1024px;
-    background: #565759; }
-    .pop-up .fa-times {
-      width: 100px;
-      height: 100px;
-      font-size: 30px;
-      float: right;
-      color: #E7ECEF;
-      margin-top: 20px;
-      margin-right: 5%; }
+    height: 500px;
+    background: #565759;
+    padding-top: 10px; }
 
   .white-container {
     width: 450px;
@@ -312,8 +291,7 @@
     background: #E7ECEF;
     border-radius: 10px;
     text-align: center;
-    overflow: auto;
-    border: 1px solid pink; }
+    overflow: auto; }
     .white-container .fa-check-circle {
       color: #A3CEF1;
       font-size: 60px;
@@ -325,6 +303,7 @@
     display: block; }
 
   .ui-progressbar {
+    color: #A3CEF1;
     position: relative; }
 
   .progress-label {
@@ -333,15 +312,6 @@
     top: 4px;
     font-weight: bold;
     text-shadow: 1px 1px 0 #fff; }
-
-  .ok-button {
-    width: 150px;
-    height: 40px;
-    background: #E8AA3F;
-    color: #FFFFFF;
-    border-radius: 10px;
-    margin: 5% auto;
-    align-items: center; }
 
   .aye-photo__mobil {
     width: 80%;
@@ -352,10 +322,9 @@
     display: none; }
 
   .information-text {
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
-    line-height: 30px;
+    font-weight: normal;
+    color: #000000;
     text-align: center;
     margin: 10%; }
 
@@ -399,11 +368,9 @@
     height: auto;
     background: #565759; }
     footer p {
-      color: #E7ECEF;
-      font-style: normal;
-      font-weight: bold;
       font-size: 18px;
-      line-height: 27px;
+      font-weight: bold;
+      color: #E7ECEF;
       text-align: center;
       padding: 3%; } }
 @media screen and (min-width: 601px) and (max-width: 799px) {
@@ -437,7 +404,6 @@
     height: auto;
     margin-left: 90%;
     margin-top: 250px;
-    position: absolute;
     position: fixed; }
 
   .fa-instagram-square {
@@ -445,7 +411,6 @@
     height: auto;
     margin-left: 90%;
     margin-top: 300px;
-    position: absolute;
     position: fixed; }
 
   .logo__aye-empanadas {
@@ -474,12 +439,6 @@
     height: auto;
     margin: 1%; }
 
-  .title_menu h1 {
-    text-align: center;
-    margin-bottom: 2%;
-    margin-top: 4%;
-    color: #565759; }
-
   .blue-line {
     width: 50%;
     height: auto;
@@ -488,25 +447,6 @@
     display: block;
     margin-bottom: 3%; }
 
-  .nav__menu {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    font-size: 18px;
-    padding-top: 2%;
-    margin-bottom: 5%; }
-    .nav__menu li {
-      margin: 0 2%;
-      list-style: none;
-      text-align: center;
-      display: inline; }
-      .nav__menu li a:hover {
-        color: #E8AA3F; }
-
-  .nav__menu--link {
-    color: #565759;
-    text-decoration: none; }
-
   .box__empanadas--menu {
     width: 100%;
     height: auto; }
@@ -514,11 +454,11 @@
   .box__empanadas {
     width: 70%;
     height: auto;
-    margin-bottom: 10px;
     background: #FFFFFF;
-    margin-left: 15%;
-    padding: 10px 10px;
-    border-radius: 10px; }
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: 15%; }
 
   .btn__box {
     width: 100%;
@@ -535,13 +475,6 @@
     text-align: center; }
     .info__type-price h2 {
       font-size: 20px;
-      color: #565759;
-      margin-top: 5px; }
-
-  .info__type-price {
-    text-align: center; }
-    .info__type-price h2 {
-      font-size: 20px;
       font-weight: medium;
       color: #565759;
       text-align: center;
@@ -553,11 +486,6 @@
     float: left;
     display: block;
     font-weight: 300; }
-
-  .empanadas-description {
-    font-weight: 300;
-    font-size: 16px;
-    margin: 4% 0; }
 
   .ranking {
     width: 90%;
@@ -592,49 +520,14 @@
   .price {
     padding-left: 150px; }
 
-  .totalAmount {
-    text-align: center; }
-
   .delet-cart {
     float: right; }
 
-  #calculate {
-    width: 318px;
-    height: 40px;
-    left: 786px;
-    background: #E8AA3F;
-    color: #FFFFFF;
-    border-radius: 10px;
-    margin: 1% auto;
-    display: block; }
-
-  #pay {
-    width: 318px;
-    height: 40px;
-    left: 786px;
-    background: #E8AA3F;
-    color: #FFFFFF;
-    border-radius: 10px;
-    margin: 1% auto;
-    display: block; }
-
-  .credit-card {
-    width: 40%;
-    margin: 3% auto;
-    display: block; }
-
   .pop-up {
     width: 100%;
-    height: 1024px;
-    background: #565759; }
-    .pop-up .fa-times {
-      width: 100px;
-      height: 100px;
-      font-size: 30px;
-      float: right;
-      color: #E7ECEF;
-      margin-top: 20px;
-      margin-right: 5%; }
+    height: 500px;
+    background: #565759;
+    padding-top: 20px; }
 
   .white-container {
     width: 450px;
@@ -644,8 +537,7 @@
     background: #E7ECEF;
     border-radius: 10px;
     text-align: center;
-    overflow: auto;
-    border: 1px solid pink; }
+    overflow: auto; }
     .white-container .fa-check-circle {
       color: #A3CEF1;
       font-size: 60px;
@@ -657,6 +549,7 @@
     display: block; }
 
   .ui-progressbar {
+    color: #A3CEF1;
     position: relative; }
 
   .progress-label {
@@ -665,15 +558,6 @@
     top: 4px;
     font-weight: bold;
     text-shadow: 1px 1px 0 #fff; }
-
-  .ok-button {
-    width: 150px;
-    height: 40px;
-    background: #E8AA3F;
-    color: #FFFFFF;
-    border-radius: 10px;
-    margin: 5% auto;
-    align-items: center; }
 
   .aye-photo__mobil {
     display: none; }
@@ -738,11 +622,9 @@
     height: auto;
     background: #565759; }
     footer p {
-      color: #E7ECEF;
-      font-style: normal;
-      font-weight: bold;
       font-size: 18px;
-      line-height: 27px;
+      font-weight: bold;
+      color: #E7ECEF;
       text-align: center;
       padding: 3%; } }
 @media screen and (min-width: 800px) {
@@ -755,7 +637,8 @@
     display: block;
     text-align: center;
     background: #A3CEF1;
-    padding: 20px; }
+    padding: 20px;
+    z-index: -1; }
     .top-nav .top-list {
       width: 100%;
       height: 30%; }
@@ -776,7 +659,6 @@
     height: auto;
     margin-left: 95%;
     margin-top: 250px;
-    position: absolute;
     position: fixed; }
 
   .fa-instagram-square {
@@ -784,7 +666,6 @@
     height: auto;
     margin-left: 95%;
     margin-top: 300px;
-    position: absolute;
     position: fixed; }
 
   .logo__aye-empanadas {
@@ -813,12 +694,6 @@
     height: auto;
     margin: 1%; }
 
-  .title_menu h1 {
-    text-align: center;
-    margin-bottom: 2%;
-    margin-top: 4%;
-    color: #565759; }
-
   .blue-line {
     width: 50%;
     height: auto;
@@ -827,25 +702,6 @@
     display: block;
     margin-bottom: 3%; }
 
-  .nav__menu {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    font-size: 18px;
-    padding-top: 2%;
-    margin-bottom: 5%; }
-    .nav__menu li {
-      margin: 0 2%;
-      list-style: none;
-      text-align: center;
-      display: inline; }
-      .nav__menu li a:hover {
-        color: #E8AA3F; }
-
-  .nav__menu--link {
-    color: #565759;
-    text-decoration: none; }
-
   .box__empanadas--menu {
     width: 90%;
     height: auto;
@@ -853,9 +709,9 @@
 
   .box__empanadas {
     background: #FFFFFF;
-    margin: 1%;
     padding: 5px;
-    border-radius: 10px; }
+    border-radius: 10px;
+    margin: 1%; }
 
   .btn__box {
     width: 100%;
@@ -883,11 +739,6 @@
     float: left;
     display: block;
     font-weight: 300; }
-
-  .empanadas-description {
-    font-weight: 300;
-    font-size: 16px;
-    margin: 4% 0; }
 
   .ranking {
     width: 90%;
@@ -923,49 +774,14 @@
   .price {
     padding-left: 150px; }
 
-  .totalAmount {
-    text-align: center; }
-
   .delet-cart {
     float: right; }
 
-  #calculate {
-    width: 318px;
-    height: 40px;
-    left: 786px;
-    background: #E8AA3F;
-    color: #FFFFFF;
-    border-radius: 10px;
-    margin: 1% auto;
-    display: block; }
-
-  #pay {
-    width: 318px;
-    height: 40px;
-    left: 786px;
-    background: #E8AA3F;
-    color: #FFFFFF;
-    border-radius: 10px;
-    margin: 1% auto;
-    display: block; }
-
-  .credit-card {
-    width: 40%;
-    margin: 3% auto;
-    display: block; }
-
   .pop-up {
     width: 100%;
-    height: 1024px;
+    height: 600px;
     background: #565759;
-    padding-top: 30px; }
-    .pop-up .fa-times {
-      width: 100px;
-      height: 100px;
-      font-size: 30px;
-      float: right;
-      color: #E7ECEF;
-      margin-right: 5%; }
+    padding-top: 20px; }
 
   .white-container {
     width: 550px;
@@ -975,8 +791,7 @@
     background: #E7ECEF;
     border-radius: 10px;
     text-align: center;
-    overflow: auto;
-    border: 1px solid pink; }
+    overflow: auto; }
     .white-container .fa-check-circle {
       color: #A3CEF1;
       font-size: 60px;
@@ -988,6 +803,7 @@
     display: block; }
 
   .ui-progressbar {
+    color: #A3CEF1;
     position: relative; }
 
   .progress-label {
@@ -996,15 +812,6 @@
     top: 4px;
     font-weight: bold;
     text-shadow: 1px 1px 0 #fff; }
-
-  .ok-button {
-    width: 150px;
-    height: 40px;
-    background: #E8AA3F;
-    color: #FFFFFF;
-    border-radius: 10px;
-    margin: 5% auto;
-    align-items: center; }
 
   .aye-photo__mobil {
     display: none; }
@@ -1069,11 +876,9 @@
     height: auto;
     background: #565759; }
     footer p {
-      color: #E7ECEF;
-      font-style: normal;
-      font-weight: bold;
       font-size: 18px;
-      line-height: 27px;
+      font-weight: bold;
+      color: #E7ECEF;
       text-align: center;
       padding: 3%; }
 
@@ -1117,5 +922,11 @@ body {
 
 html {
   font-family: 'Poppins', sans-serif; }
+
+.nav-banner {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 /*# sourceMappingURL=style.css.map */

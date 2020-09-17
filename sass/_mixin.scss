@@ -21,3 +21,15 @@
   margin: $m;
   display: $d;
 }
+
+@mixin icons($ml,$mp,$p){
+  margin-left:$ml;
+  margin-top:$mp;
+  position:$p;
+}
+
+@mixin box($b,$p,$br){
+  background: $b;
+  padding: $p;
+  border-radius: $br;
+}

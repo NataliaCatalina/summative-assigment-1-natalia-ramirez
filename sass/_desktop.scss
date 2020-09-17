@@ -4,23 +4,22 @@
     display: none;
   }
 
+//--nav
   .top-nav{
     @include dimension(100%,auto);
     display: block;
     text-align: center;
     background: $color_light-blue;
     padding: 20px;
-    // border: 1px solid blue;
+    z-index: -1;
       .top-list{
       @include dimension(100%,30%);
-      // border: 1px solid red;
       .top-nav-list {
         @include dimension(100%,auto);
         display: inline;
         margin: 0 2%;
         font-size: 20px;
         font-weight: bold;
-        // border: 1px solid green;
         .top-nav-link{
         @include list(none,none,$color_gray)
         }
@@ -29,69 +28,44 @@
   }
 
 
-
   .fa-facebook-square{
     @include dimension(52px,auto);
-    margin-left:95%;
-    margin-top: 250px;
-    position: absolute;
-    position: fixed;
-    // border: 1px solid white;
+    @include icons(95%,250px,fixed);
   }
 
   .fa-instagram-square{
     @include dimension(52px,auto);
-    margin-left: 95%;
-    margin-top: 300px;
-    position: absolute;
-    position: fixed;
-    // border: 1px solid white;
+    @include icons(95%,300px,fixed);
   }
-
-
 
   .logo__aye-empanadas{
     @include dimension(100%,auto);
     margin-bottom: 80px;
     top: 8px;
     position: relative;
-    // border: 1px solid red;
   }
 
   .logo{
     @include dimension(40%,auto);
     padding-top: 5%;
-    margin: auto;
-    display: block;
-    // border: 1px solid red;
+    @include center (auto,block);
   }
 
-//******************************************** social media
+//****************** social media
 
   .image-container {
     @include dimension(80%,auto);
     @include center (auto,block);
     overflow: auto;
-    // border: 1px solid red;
   }
 
   .social-photos{
     @include dimension(30%,auto);
     margin: 1%;
-    // border: 1px solid blue;
   }
 
-  // ***********************************************MENU SECTION
+  // *********************MENU SECTION
 
-  .title_menu{
-    // border: 1px solid red;
-    h1{
-      text-align: center;
-      margin-bottom: 2%;
-      margin-top: 4%;
-      color: $color_gray;
-    }
-  }
 
   .blue-line{
     @include dimension(50%,auto);
@@ -100,50 +74,22 @@
     margin-bottom: 3%;
   }
 
-  .nav__menu{
-    @include dimension(100%,auto);
-    text-align: center;
-    font-size: 18px;
-    padding-top: 2%;
-    margin-bottom: 5%;
-    li{
-      margin: 0 2%;
-      list-style: none;
-      text-align: center;
-      display: inline;
-      a:hover{
-        color: $color_yellow;
-      }
-    }
-  }
 
-  .nav__menu--link{
-    color: $color_gray;
-    text-decoration: none;
-    }
-
-
-  // *************************************************EMPANADAS
+  // **************************EMPANADAS
 
   .box__empanadas--menu{
     @include dimension(90%,auto);
     margin: auto;
-    // border: 1px solid blue;
     }
 
   .box__empanadas {
-    // @include dimension(300px,auto);
-    background: $color_white;
+    @include box($color_white,5px,10px);
     margin: 1%;
-    padding: 5px;
-    border-radius: 10px;
-    // border: 1px solid yellow;
   }
 
   .btn__box{
     @include dimension(100%,20px);
     margin-top: 30%;
-    // border: 1px solid pink;
   }
 
   .photo-empanadas{
@@ -153,38 +99,24 @@
 
   .info__type-price{
     text-align: center;
-    // border: 1px solid orange;
     h2{
       @include fonts (20px,medium,$color_gray, center);
       margin-top: 3px;
    }
   }
 
-  // .info__type-price{
-  //   p {
-  //     @include fonts (16px,medium,$color_gray, center);
-  //    }
-  // }
-
   .ranking-number{
     @include dimension(10%,auto);
     float: left;
     display: block;
     font-weight: 300;
-    // text-align: right;
   }
 
-  .empanadas-description{
-    font-weight: 300;
-    font-size: 16px;
-    margin: 4% 0;
-  }
 
   .ranking{
     @include dimension(90%,auto);
     float: left;
     text-align: right;
-    // border: 1px solid red;
   }
 
   .request-text{
@@ -194,7 +126,6 @@
     font-size: 14px;
     line-height: 143%;
     border-bottom: 1px solid $color_black;
-    // border: 1px solid orange;
   }
 
 // ************************************* My cart
@@ -208,7 +139,6 @@
    @include dimension(100%,auto);
    margin-top: 3%;
    border-right: 1px solid $color_light-blue;
-   // border:1px solid red;
 }
 
 .box__cart--02{
@@ -220,53 +150,17 @@
   padding-left:150px;
 }
 
-.totalAmount{
-  text-align: center;
-}
-
 .delet-cart{
   float: right;
-  // border: 1px solid pink;
 }
 
-#calculate {
-  @include dimension(318px,40px);
-  left: 786px;
-  background: $color_yellow;
-  color: $color_white;
-  border-radius: 10px;
-  @include center (1% auto,block);
-}
 
-#pay {
-  @include dimension(318px,40px);
-  left: 786px;
-  background: $color_yellow;
-  color: $color_white;
-  border-radius: 10px;
-  @include center (1% auto,block);
-}
-
-.credit-card{
-  width: 40%;
-  @include center (3% auto,block);
-}
-
-//-------------------------------------- thanks
+//---------------- thanks
 
 .pop-up{
-  @include dimension(100%,1024px);
+  @include dimension(100%,600px);
   background: $color_gray;
-  padding-top: 30px;
-  // opacity: 80%;
-  // border: 1px solid yellow;
-  .fa-times {
-    @include dimension(100px,100px);
-    font-size: 30px;
-    float: right;
-    color: $color_light-white;
-    margin-right: 5%;
-  }
+  padding-top: 20px;
 }
 
 
@@ -277,13 +171,12 @@
   border-radius: 10px;
   text-align: center;
   overflow: auto;
-  border: 1px solid pink;
   .fa-check-circle{
     color: $color_light-blue;
     font-size: 60px;
     margin-top: 10%;
   }
-}     /////------------- need fix
+}
 
 #progressbar{
   width: 80%;
@@ -292,6 +185,7 @@
 }
 
 .ui-progressbar {
+  color: $color_light-blue;
     position: relative;
   }
 
@@ -302,17 +196,6 @@
   font-weight: bold;
   text-shadow: 1px 1px 0 #fff;
 }
-
-.ok-button{
-  @include dimension(150px,40px);
-  background: $color_yellow;
-  color: $color_white;
-  border-radius: 10px;
-  margin: 5% auto;
-  align-items: center;
-  // border: 1px solid red;
-}
-
 
 
   //  ********************************** about
@@ -331,7 +214,6 @@
     @include fonts (18px,normal,$color_black,center);
     padding: 2%;
     @include center (auto,block);
-    // border: 1px solid blue;
   }
 
   //**********************************contact us
@@ -340,7 +222,6 @@
   @include dimension(80%,auto);
   @include center (auto,block);
   padding: 1%;
-  // border: 1px solid green;
 }
 
 .contact-form{
@@ -369,7 +250,6 @@ form textarea {
 
 .information-text__contact{
   padding-left: 30px;
-  // border: 1px solid red;
 }
 
 
@@ -383,12 +263,7 @@ form textarea {
     @include dimension (100%,auto);
     background: $color_gray;
       p{
-      color: $color_light-white;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 27px;
-      text-align: center;
+       @include fonts (18px,bold,$color_light-white,center);
       padding: 3%;
       }
   }

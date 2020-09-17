@@ -12,9 +12,18 @@
 
 body{
   background: $color_light-white;
-  
+
 }
 
 html {
   font-family: 'Poppins', sans-serif;
+}
+
+
+
+.nav-banner{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
