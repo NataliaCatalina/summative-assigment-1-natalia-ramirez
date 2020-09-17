@@ -22,7 +22,7 @@
         font-weight: bold;
         // border: 1px solid green;
         .top-nav-link{
-          @include list(none,none,$color_gray)
+        @include list(none,none,$color_gray)
         }
       }
     }
@@ -97,6 +97,7 @@
     @include dimension(50%,auto);
     border-bottom: 2px solid $color_light-blue;
     @include center (auto,block);
+    margin-bottom: 3%;
   }
 
   .nav__menu{
@@ -131,6 +132,7 @@
     }
 
   .box__empanadas {
+    // @include dimension(300px,auto);
     background: $color_white;
     margin: 1%;
     padding: 5px;
@@ -255,6 +257,7 @@
 .pop-up{
   @include dimension(100%,1024px);
   background: $color_gray;
+  padding-top: 30px;
   // opacity: 80%;
   // border: 1px solid yellow;
   .fa-times {
@@ -262,15 +265,14 @@
     font-size: 30px;
     float: right;
     color: $color_light-white;
-    margin-top: 20px;
     margin-right: 5%;
-
   }
 }
 
+
 .white-container {
   @include dimension(550px,400px);
-  @include center (auto,block);
+  @include center(5% auto,block);
   background: $color_light-white;
   border-radius: 10px;
   text-align: center;
@@ -322,7 +324,6 @@
   .aye-photo__desktop{
     @include dimension(60%,auto);
     @include center (auto,block);
-    border: 3px dotted $color_yellow;
   }
 
   .information-text{

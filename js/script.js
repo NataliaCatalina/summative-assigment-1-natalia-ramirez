@@ -2,12 +2,15 @@ console.log('js');
 
 
 
-$('#drop-nav, .read-less-btn').hide();
+$('#drop-nav, .read-less-btn, #thanks ').hide();
 
-// $('#empanadas-btn').click(funtion(){
-//   $('empanadas').show();
-// });
 
+
+$('#pay').on('click', function(){
+  console.log('thanks');
+  $('#thanks').show();
+  
+  });
 //****************
 
 

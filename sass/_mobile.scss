@@ -34,7 +34,6 @@
       color: $color_gray;
       text-decoration: none;
     }
-
  }
 }
 
@@ -152,12 +151,6 @@ a:hover{
   }
  }
 
- // .info__type-price{
- //   p {
- //    @include fonts (16px,normal,$color_gray, center);
- //   }
- // }
-
 .ranking-number{
   @include dimension(10%,auto);
   float: left;
@@ -233,7 +226,7 @@ a:hover{
 
 #pay {
   @include dimension(318px,40px);
-  left: 786px;
+  left: 600px;
   background: $color_yellow;
   color: $color_white;
   border-radius: 10px;
@@ -329,7 +322,6 @@ a:hover{
      margin: 10%;
    }
 
-//**********************************contact us
 
 //**********************************contact us
 

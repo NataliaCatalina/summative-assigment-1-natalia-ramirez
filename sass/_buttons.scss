@@ -1,14 +1,11 @@
 .order-now__button{
-border: none;
-width: 35%;
-padding: 5px 10px;
-border-top: 2px solid $color_yellow;
-border-bottom: 2px solid $color_yellow;
-background: $color_white;
-font-size: 30px;
-color: $color_gray;
-text-align: center;
-margin: auto;
-display: block;
-margin-bottom: 3%;
-}
+  @include fonts(30px,normal,$color_gray,center);
+  @include center ( 3% auto,block);
+  text-decoration: none;
+  border: none;
+  width: 35%;
+  padding: 5px 10px;
+  border-top: 2px solid $color_yellow;
+  border-bottom: 2px solid $color_yellow;
+  background: $color_white;
+  }

@@ -4,20 +4,20 @@
 }
 
 
-@mixin list ($ls,$td,$c){
+@mixin list($ls,$td,$c){
   list-style: $ls;
   text-decoration: $td;
   color: $c;
 }
 
-@mixin fonts ($fs,$fw,$c,$ta){
+@mixin fonts($fs,$fw,$c,$ta){
   font-size: $fs;
   font-weight: $fw;
   color:$c;
   text-align:$ta;
 }
 
-@mixin center ($m,$d){
+@mixin center($m,$d){
   margin: $m;
   display: $d;
 }
