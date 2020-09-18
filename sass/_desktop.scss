@@ -154,6 +154,11 @@
   float: right;
 }
 
+.credit-card{
+  width: 40%;
+  @include center (3% auto,block);
+}
+
 
 //---------------- thanks
 

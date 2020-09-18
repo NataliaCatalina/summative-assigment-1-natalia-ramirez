@@ -9,7 +9,7 @@ $('#drop-nav, .read-less-btn, #thanks ').hide();
 $('#pay').on('click', function(){
   console.log('thanks');
   $('#thanks').show();
-  
+
   });
 //****************
 
@@ -109,7 +109,7 @@ $('.read-less-btn').on('click', function(){
 //------------- reload
 
 $(document).ready(function () {
-            $('.delet-cart').click(function () {
+            $('.delet-cart, .ok-button').click(function () {
                 location.reload(true);
                 alert('Reloading Page');
             });

@@ -1,13 +1,13 @@
 .order-now__button{
   @include fonts(30px,normal,$color_gray,center);
   @include center ( 3% auto,block);
-  text-decoration: none;
   border: none;
   width: 35%;
   padding: 5px 10px;
   border-top: 2px solid $color_yellow;
   border-bottom: 2px solid $color_yellow;
   background: $color_white;
+  text-decoration: none;
   }
 
 
@@ -29,10 +29,7 @@
     @include center (1% auto,block);
   }
 
-  .credit-card{
-    width: 40%;
-    @include center (3% auto,block);
-  }
+
 
   .ok-button{
     @include dimension(150px,40px);

@@ -12,7 +12,8 @@
   float: left;
   width: 10%;
   height: auto;
-  padding: 5px; }
+  padding: 5px;
+  margin: 5px; }
 
 .title_menu h1 {
   text-align: center;
@@ -45,13 +46,13 @@
   text-align: center;
   margin: 3% auto;
   display: block;
-  text-decoration: none;
   border: none;
   width: 35%;
   padding: 5px 10px;
   border-top: 2px solid #E8AA3F;
   border-bottom: 2px solid #E8AA3F;
-  background: #FFFFFF; }
+  background: #FFFFFF;
+  text-decoration: none; }
 
 #calculate {
   width: 318px;
@@ -71,11 +72,6 @@
   color: #FFFFFF;
   border-radius: 10px;
   margin: 1% auto;
-  display: block; }
-
-.credit-card {
-  width: 40%;
-  margin: 3% auto;
   display: block; }
 
 .ok-button {
@@ -276,6 +272,11 @@
 
   .delet-cart {
     float: right; }
+
+  .credit-card {
+    width: 40%;
+    margin: 3% auto;
+    display: block; }
 
   .pop-up {
     width: 100%;
@@ -523,6 +524,11 @@
   .delet-cart {
     float: right; }
 
+  .credit-card {
+    width: 40%;
+    margin: 3% auto;
+    display: block; }
+
   .pop-up {
     width: 100%;
     height: 500px;
@@ -587,7 +593,7 @@
     padding: 1%; }
 
   .contact-form {
-    width: 60%;
+    width: 80%;
     height: auto;
     margin: auto;
     display: block;
@@ -776,6 +782,11 @@
 
   .delet-cart {
     float: right; }
+
+  .credit-card {
+    width: 40%;
+    margin: 3% auto;
+    display: block; }
 
   .pop-up {
     width: 100%;

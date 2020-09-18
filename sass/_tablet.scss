@@ -149,6 +149,11 @@
   float: right;
 }
 
+.credit-card{
+  width: 40%;
+  @include center (3% auto,block);
+}
+
 
 //------------- thanks
 
@@ -219,7 +224,7 @@
 }
 
 .contact-form{
-  @include dimension(60%,auto);
+  @include dimension(80%,auto);
   @include center (auto,block);
   padding: 8px;
   button{
